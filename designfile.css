@@ -123,6 +123,7 @@ textarea {
   display: flex;
   text-align: right;
   flex-wrap: wrap;
+  padding-right: 5px;
 }
 
 button {
