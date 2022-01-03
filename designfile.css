@@ -200,7 +200,7 @@ table {
   cursor: pointer;
 }
 
-@media (max-width: 375px){
+@media (max-width: 828px){
     #personalNote{
         width: 100%;
         display: flex;
