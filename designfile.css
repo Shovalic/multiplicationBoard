@@ -22,8 +22,8 @@ body {
   background-color: lightpink;
   direction: rtl;
   font-size: 20px;
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Varela Round', sans-serif;
+  /* font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif; */
 }
 
 #container {
@@ -244,7 +244,7 @@ table {
     font-style: normal;
   
   }
-  
+
   #personalNote{
       width: 100%;
       display: flex;
