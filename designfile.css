@@ -354,7 +354,7 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
     h1, pre{
         font-size: 20px;
@@ -362,13 +362,13 @@ table {
         justify-content: center;
         align-content: center;
         width: 100%;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     h1{
         font-size: 30px;
         margin-top: 10px;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #tableMultiply{
@@ -376,44 +376,44 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #numberSize{
         font-size: 15px;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #numberSizeTd{
         font-size: 15px;
         color: black;
         font-weight: bold;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #tableShow input, #readyToCheck{
         width: 90%;
         text-align: center;
         font-size: 18px;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }  
 
     #readyToCheck{
         margin-top: 20px;
         margin-right: -10px;
         width: 85%;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #practice{
         width: 100%;
         display: flex;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #checkAnswer, #playagain{
         font-size: 18px;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #process{
@@ -421,7 +421,7 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #processForm{
@@ -431,7 +431,7 @@ table {
         display: flex;
         justify-content: center;
         text-align: center;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #tellingStroy{
@@ -446,12 +446,12 @@ table {
         height: 120px;
         float: right;
         text-align: right;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     label{
         font-size: 20px;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
     #sendMail{
@@ -461,7 +461,7 @@ table {
         align-items: center;
         margin-right: 25px;
         font-size: 20px;
-        font-family: 'varela_roundregular';
+        font-family: 'davidregular';
     }
 
 }
