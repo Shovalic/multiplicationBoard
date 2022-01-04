@@ -11,7 +11,9 @@
       url('subset-Calibri.woff') format('woff'),  /* Newer browsers */
       url('subset-Calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
       url('subset-Calibri.svg') format('svg'); /*IE og iOS earlier than version 5*/
-      }
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   padding-top: 20px;
@@ -19,7 +21,7 @@ body {
   background-color: lightpink;
   direction: rtl;
   font-size: 20px;
-  font-family: "calibri";
+  font-family: 'calibri';
 }
 
 #container {
