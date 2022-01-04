@@ -202,7 +202,8 @@ table {
 @font-face {
   font-family: 'calibri';
     src: url('subset-Calibri.eot') format('embedded-opentype'); /* IE9 + later */
-    src: url('subset-Calibri.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
+    src: 
+    /* url('subset-Calibri.eot?iefix') format('embedded-opentype'), IE6 to IE8  */
         url('subset-Calibri.woff') format('woff'),  /* Newer browsers */
         url('subset-Calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
         url('subset-Calibri.svg') format('svg'); /*IE og iOS earlier than version 5*/
