@@ -22,7 +22,7 @@ body {
   background-color: lightpink;
   direction: rtl;
   font-size: 20px;
-  font-family: "varela_roundregular";
+  font-family: "davidregular";
 }
 
 #container {
@@ -45,7 +45,7 @@ body {
 
 pre {
   margin-top: 10px;
-  font-family: "varela_roundregular";
+  font-family: "davidregular";
   font-size: 30px;
   justify-content: center;
   align-items: center;
@@ -123,7 +123,7 @@ input {
   width: 40px;
   font-size: 20px;
   text-align: center;
-  font-family: "varela_roundregular";
+  font-family: "davidregular";
 }
 
 textarea {
@@ -131,7 +131,7 @@ textarea {
   height: 150px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "varela_roundregular";
+  font-family: "davidregular";
   font-size: 20px;
   display: flex;
   text-align: right;
@@ -140,7 +140,7 @@ textarea {
 }
 
 button {
-  font-family: "varela_roundregular";
+  font-family: "davidregular";
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -195,7 +195,7 @@ table {
 }
 
 #sendMail {
-  font-family: "varela_roundregular";
+  font-family: "davidregular";
   font-size: 22px;
   display: flex;
   justify-content: center;
@@ -263,7 +263,7 @@ table {
 
   #numberSize{
       font-size: 15px;
-      font-family: 'varela_roundregular';
+      font-family: 'davidregular';
   }
 
   #numberSizeTd{
