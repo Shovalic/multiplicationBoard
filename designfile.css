@@ -236,7 +236,7 @@ table {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
   h1, pre{
       font-size: 20px;
@@ -244,13 +244,13 @@ table {
       justify-content: center;
       align-content: center;
       width: 100%;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   h1{
       font-size: 30px;
       margin-top: 10px;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #tableMultiply{
@@ -258,44 +258,44 @@ table {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #numberSize{
       font-size: 15px;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #numberSizeTd{
       font-size: 15px;
       color: black;
       font-weight: bold;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #tableShow input, #readyToCheck{
       width: 90%;
       text-align: center;
       font-size: 18px;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }  
 
   #readyToCheck{
       margin-top: 20px;
       margin-right: -10px;
       width: 85%;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #practice{
       width: 100%;
       display: flex;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #checkAnswer, #playagain{
       font-size: 18px;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #process{
@@ -303,7 +303,7 @@ table {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #processForm{
@@ -313,7 +313,7 @@ table {
       display: flex;
       justify-content: center;
       text-align: center;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #tellingStroy{
@@ -328,12 +328,12 @@ table {
       height: 120px;
       float: right;
       text-align: right;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   label{
       font-size: 20px;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
   #sendMail{
@@ -343,7 +343,7 @@ table {
       align-items: center;
       margin-right: 25px;
       font-size: 20px;
-      font-family: 'calibri';
+      font-family: 'varela_roundregular';
   }
 
 }
@@ -354,7 +354,7 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
     h1, pre{
         font-size: 20px;
@@ -362,13 +362,13 @@ table {
         justify-content: center;
         align-content: center;
         width: 100%;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     h1{
         font-size: 30px;
         margin-top: 10px;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #tableMultiply{
@@ -376,44 +376,44 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #numberSize{
         font-size: 15px;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #numberSizeTd{
         font-size: 15px;
         color: black;
         font-weight: bold;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #tableShow input, #readyToCheck{
         width: 90%;
         text-align: center;
         font-size: 18px;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }  
 
     #readyToCheck{
         margin-top: 20px;
         margin-right: -10px;
         width: 85%;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #practice{
         width: 100%;
         display: flex;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #checkAnswer, #playagain{
         font-size: 18px;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #process{
@@ -421,7 +421,7 @@ table {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #processForm{
@@ -431,7 +431,7 @@ table {
         display: flex;
         justify-content: center;
         text-align: center;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #tellingStroy{
@@ -446,12 +446,12 @@ table {
         height: 120px;
         float: right;
         text-align: right;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     label{
         font-size: 20px;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
     #sendMail{
@@ -461,7 +461,7 @@ table {
         align-items: center;
         margin-right: 25px;
         font-size: 20px;
-        font-family: 'calibri';
+        font-family: 'varela_roundregular';
     }
 
 }
