@@ -139,7 +139,8 @@ textarea {
 }
 
 button {
-  font-family: "rubiklight";
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -255,7 +256,8 @@ table {
       justify-content: center;
       align-content: center;
       width: 100%;
-      font-family: 'Rubik';
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
   }
 
   h1{
