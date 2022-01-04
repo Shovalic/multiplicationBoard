@@ -205,8 +205,10 @@ table {
     src: url('calibri.eot.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
         url('calibri.woff') format('woff'),  /* Newer browsers */
         url('calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
-        url('calibri.svg#calibri + regular, italic, bold') format('svg'); /*IE og iOS earlier than version 5*/
-}
+        url('calibri.svg, regular, bold') format('svg'); /*IE og iOS earlier than version 5*/
+    font-weight: normal;
+    font-style: normal;
+      }
 
 @media (max-width: 375px){
     #personalNote{
