@@ -5,12 +5,12 @@
 @font-face {
   font-family: 'Rubik', sans-serif;
   font-family: 'Varela Round', sans-serif;
-  src: url('rubik-variablefont_wght-webfont.eot');
-  src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-       url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
-       url('rubik-variablefont_wght-webfont.woff') format('woff'),
-       url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
-       url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+  src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
+  src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+       url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
+       url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
+       url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
 }
 
 body {
@@ -249,13 +249,14 @@ table {
   @font-face {
     font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
-    src: url('rubik-variablefont_wght-webfont.eot');
-    src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
-         url('rubik-variablefont_wght-webfont.woff') format('woff'),
-         url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
-         url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+    src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
+    src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
   }
+  
 
   #personalNote{
       width: 100%;
@@ -390,13 +391,14 @@ table {
   @font-face {
     font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
-    src: url('rubik-variablefont_wght-webfont.eot');
-    src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
-         url('rubik-variablefont_wght-webfont.woff') format('woff'),
-         url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
-         url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+    src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
+    src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
+         url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
   }
+  
 
   #personalNote{
     width: 100%;
