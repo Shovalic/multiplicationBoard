@@ -201,11 +201,12 @@ table {
 
 @font-face {
   font-family: 'calibri';
-      src: url('C:\Windows\Fonts\Calibri.eot') format('embedded-opentype'); /* IE9 + later */
-      src: url('C:\Windows\Fonts\Calibri.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
-           url('C:\Windows\Fonts\Calibri.woff') format('woff'),  /* Newer browsers */
-           url('C:\Windows\Fonts\Calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
-  }
+    src: url('calibri.eot') format('embedded-opentype'); /* IE9 + later */
+    src: url('calibri.eot.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
+        url('calibri.woff') format('woff'),  /* Newer browsers */
+        url('calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+        url('calibri.svg#calibri + regular, italic, bold') format('svg'); /*IE og iOS earlier than version 5*/
+}
 
 @media (max-width: 375px){
     #personalNote{
