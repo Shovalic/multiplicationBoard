@@ -4,15 +4,16 @@
 }
 
 @font-face {
-  font-family: 'Calibri';
-    src: 
-      local('calibri')
-      url('subset-Calibri.woff2') format('woff2'),  /* Newer browsers */
-      url('subset-Calibri.woff') format('woff'),  /* Newer browsers */
-      url('subset-Calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
-      url('subset-Calibri.svg') format('svg'); /*IE og iOS earlier than version 5*/
+  font-family: 'davidregular';
+  src: url('david-webfont.eot');
+  src: url('david-webfont.eot?#iefix') format('embedded-opentype'),
+       url('david-webfont.woff2') format('woff2'),
+       url('david-webfont.woff') format('woff'),
+       url('david-webfont.ttf') format('truetype'),
+       url('david-webfont.svg#davidregular') format('svg');
   font-weight: normal;
   font-style: normal;
+
 }
 
 body {
