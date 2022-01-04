@@ -139,7 +139,8 @@ textarea {
 }
 
 button {
-  font-family: "rubiklight";
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -255,7 +256,8 @@ table {
       justify-content: center;
       align-content: center;
       width: 100%;
-      font-family: 'Rubik';
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
   }
 
   h1{
@@ -381,137 +383,139 @@ table {
          url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
          url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
 }
-    #personalNote{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-    h1, pre{
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        font-family: 'Rubik', sans-serif;
-      font-family: 'Varela Round', sans-serif;
-      }
 
-    h1{
-        font-size: 30px;
-        margin-top: 10px;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #tableMultiply{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }}
-
-    #numberSize{
-        font-size: 15px;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #numberSizeTd{
-        font-size: 15px;
-        color: black;
-        font-weight: bold;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #tableShow input, #readyToCheck{
-        width: 90%;
-        text-align: center;
-        font-size: 18px;
-        font-family: 'Rubik', sans-serif;
-      font-family: 'Varela Round', sans-serif;
-      } 
-
-    #readyToCheck{
-        margin-top: 20px;
-        margin-right: -10px;
-        width: 85%;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #practice{
-        width: 100%;
-        display: flex;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #checkAnswer, #playagain{
-        font-size: 18px;
-        font-family: 'Rubik', sans-serif;
-      font-family: 'Varela Round', sans-serif;
-      }
-
-    #process{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Rubik', sans-serif;
-      font-family: 'Varela Round', sans-serif;
-      }
-
-    #processForm{
-        font-size: 18px;
-        margin-right: 20px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #tellingStroy{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        margin-left: 20px;
-        padding: 5px;
-        margin-bottom: 20px;
-        width: 90%;
-        height: 120px;
-        float: right;
-        text-align: right;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    label{
-        font-size: 20px;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
-    #sendMail{
-        width: 85%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 25px;
-        font-size: 20px;
-        font-family: 'Rubik', sans-serif;
-        font-family: 'Varela Round', sans-serif;
-        }
-
+#personalNote{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
+
+h1, pre{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1{
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#tableMultiply{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}}
+
+#numberSize{
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#numberSizeTd{
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#tableShow input, #readyToCheck{
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+} 
+
+#readyToCheck{
+  margin-top: 20px;
+  margin-right: -10px;
+  width: 85%;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#practice{
+  width: 100%;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#checkAnswer, #playagain{
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+#process{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#processForm{
+  font-size: 18px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#tellingStroy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 120px;
+  float: right;
+  text-align: right;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+label{
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#sendMail{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
 
 
 
