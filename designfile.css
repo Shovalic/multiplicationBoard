@@ -5,15 +5,12 @@
 
 @font-face {
   font-family: 'Calibri';
-    src: url('subset-Calibri.eot') format('embedded-opentype'); /* IE9 + later */
     src: 
       local('calibri')
       url('subset-Calibri.woff2') format('woff2'),  /* Newer browsers */
       url('subset-Calibri.woff') format('woff'),  /* Newer browsers */
       url('subset-Calibri.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
       url('subset-Calibri.svg') format('svg'); /*IE og iOS earlier than version 5*/
-    font-weight: normal;
-    font-style: normal;
       }
 
 body {
