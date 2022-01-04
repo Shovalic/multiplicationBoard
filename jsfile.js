@@ -78,7 +78,7 @@ function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
     Username: "MultiplicationTableStatus@gmail.com",
-    Password: "Start56now",
+    Password: "Believe678",
     To: document.getElementById("shoval").value,
     From: "MultiplicationTableStatus@gmail.com",
     Subject: "Sending Email using javascript",
