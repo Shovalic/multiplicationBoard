@@ -199,6 +199,14 @@ table {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: 'calibri';
+      src: url('../fonts/calibri_font/calibri_font.eot') format('embedded-opentype'); /* IE9 + later */
+      src: url('../fonts/calibri_font/calibri_font.eot?#iefix') format('embedded-opentype'), /* IE6 to IE8  */
+           url('../fonts/calibri_font/calibri_font.woff') format('woff'),  /* Newer browsers */
+           url('../fonts/calibri_font/calibri_font.ttf') format('truetype'), /* Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini  */
+  }
+
 @media (max-width: 375px){
     #personalNote{
         width: 100%;
