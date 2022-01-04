@@ -55,7 +55,6 @@ function done() {
 
 function practiceMore() {
   document.getElementById("res").value = "none";
-  innerHTML.style.display = "none";
   for (k = 1; k <= 10; k++) {
     const num1 = Math.floor(Math.random() * 11);
     document.getElementById("firstMult").value = num1;
