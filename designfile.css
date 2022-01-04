@@ -221,6 +221,17 @@ table {
 }
 
 @media (min-width: 376px) and (max-width: 828px){
+  @font-face {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    src: url('rubik-variablefont_wght-webfont.eot');
+    src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('rubik-variablefont_wght-webfont.woff') format('woff'),
+         url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
+         url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+}
+
   #personalNote{
       width: 100%;
       display: flex;
