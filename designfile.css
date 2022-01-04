@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  src: url('rubik-variablefont_wght-webfont.eot');
+  src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+       url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
+       url('rubik-variablefont_wght-webfont.woff') format('woff'),
+       url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
+       url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+}
 
 body {
   padding-top: 20px;
@@ -9,7 +19,6 @@ body {
   background-color: lightpink;
   direction: rtl;
   font-size: 20px;
-  font-family: "calibri";
 }
 
 #container {
@@ -32,7 +41,8 @@ body {
 
 pre {
   margin-top: 10px;
-  font-family: "calibri";
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 30px;
   justify-content: center;
   align-items: center;
@@ -110,7 +120,8 @@ input {
   width: 40px;
   font-size: 20px;
   text-align: center;
-  font-family: "calibri";
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 textarea {
@@ -118,7 +129,8 @@ textarea {
   height: 150px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "calibri";
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 20px;
   display: flex;
   text-align: right;
@@ -127,7 +139,7 @@ textarea {
 }
 
 button {
-  font-family: "calibri";
+  font-family: "rubiklight";
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -182,7 +194,8 @@ table {
 }
 
 #sendMail {
-  font-family: "calibri";
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 22px;
   display: flex;
   justify-content: center;
@@ -218,12 +231,23 @@ table {
 }
 
 @media (min-width: 376px) and (max-width: 828px){
+  @font-face {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    src: url('rubik-variablefont_wght-webfont.eot');
+    src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('rubik-variablefont_wght-webfont.woff') format('woff'),
+         url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
+         url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+}
+
   #personalNote{
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'calibri';
+      font-family: 'Rubik';
   }
   h1, pre{
       font-size: 20px;
@@ -231,67 +255,74 @@ table {
       justify-content: center;
       align-content: center;
       width: 100%;
-      font-family: 'calibri';
+      font-family: 'Rubik';
   }
 
   h1{
       font-size: 30px;
       margin-top: 10px;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #tableMultiply{
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #numberSize{
       font-size: 15px;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #numberSizeTd{
       font-size: 15px;
       color: black;
       font-weight: bold;
-      font-family: 'calibri';
-  }
-
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
   #tableShow input, #readyToCheck{
       width: 90%;
       text-align: center;
       font-size: 18px;
-      font-family: 'calibri';
-  }  
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      } 
 
   #readyToCheck{
       margin-top: 20px;
       margin-right: -10px;
       width: 85%;
-      font-family: 'calibri';
-  }
-
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
   #practice{
       width: 100%;
       display: flex;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #checkAnswer, #playagain{
       font-size: 18px;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #process{
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #processForm{
       font-size: 18px;
@@ -300,8 +331,9 @@ table {
       display: flex;
       justify-content: center;
       text-align: center;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #tellingStroy{
       display: flex;
@@ -315,13 +347,15 @@ table {
       height: 120px;
       float: right;
       text-align: right;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   label{
       font-size: 20px;
-      font-family: 'calibri';
-  }
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
   #sendMail{
       width: 85%;
@@ -330,87 +364,108 @@ table {
       align-items: center;
       margin-right: 25px;
       font-size: 20px;
-      font-family: 'calibri';
-  }
-
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
+     
 }
 
-
 @media (max-width: 375px){
+  @font-face {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    src: url('rubik-variablefont_wght-webfont.eot');
+    src: url('rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('rubik-variablefont_wght-webfont.woff') format('woff'),
+         url('rubik-variablefont_wght-webfont.ttf') format('truetype'),
+         url('rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+}
     #personalNote{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
     h1, pre{
         font-size: 20px;
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
     h1{
         font-size: 30px;
         margin-top: 10px;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #tableMultiply{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }}
 
     #numberSize{
         font-size: 15px;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #numberSizeTd{
         font-size: 15px;
         color: black;
         font-weight: bold;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #tableShow input, #readyToCheck{
         width: 90%;
         text-align: center;
         font-size: 18px;
-        font-family: 'calibri';
-    }  
+        font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      } 
 
     #readyToCheck{
         margin-top: 20px;
         margin-right: -10px;
         width: 85%;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #practice{
         width: 100%;
         display: flex;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #checkAnswer, #playagain{
         font-size: 18px;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
     #process{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      }
 
     #processForm{
         font-size: 18px;
@@ -419,8 +474,9 @@ table {
         display: flex;
         justify-content: center;
         text-align: center;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #tellingStroy{
         display: flex;
@@ -434,13 +490,15 @@ table {
         height: 120px;
         float: right;
         text-align: right;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     label{
         font-size: 20px;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
     #sendMail{
         width: 85%;
@@ -449,8 +507,9 @@ table {
         align-items: center;
         margin-right: 25px;
         font-size: 20px;
-        font-family: 'calibri';
-    }
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        }
 
 }
 
