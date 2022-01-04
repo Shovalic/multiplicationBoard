@@ -200,7 +200,7 @@ table {
 }
 
 @font-face {
-  font-family: 'calibri';
+  font-family: 'subset-Calibri';
     src: url('subset-Calibri.eot') format('embedded-opentype'); /* IE9 + later */
     src: 
     /* url('subset-Calibri.eot?iefix') format('embedded-opentype'), IE6 to IE8  */
