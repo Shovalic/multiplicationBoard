@@ -121,7 +121,7 @@ caption {
 
 input {
   width: 40px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-family: 'Varela Round', sans-serif;
@@ -168,12 +168,12 @@ table {
 }
 
 #numberSize{
-  font-size: 25px;
+  font-size: 20px;
   color: black;
 }
 
 #numberSizeTd{
-  font-size: 25px;
+  font-size: 20px;
   color: black;
   font-weight: bold;
 }
