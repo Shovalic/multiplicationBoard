@@ -8,10 +8,13 @@
 
     <style>
         #sendPerson{
-            display: none;
-            margin-left: 100px;
+            margin-left: 5px;
             margin-top: -18px;
             text-align: center;
+        }
+
+        #sendPerson::after{
+            display: block;
         }
 
         #sendMail{
@@ -32,31 +35,48 @@
 
         function turn() {
             let content = document.getElementById("tellingStroy").value;
-            console.log(content)
-            // const checkboxes = document.querySelectorAll('input[type=“checkbox”]');
-            // const emails = [];
-            // for(let i = 0 ; i < checkboxes.length ; i++){
-            //     if(checkboxes[i].checked){
-            //         emails.push(checkboxes[i].value);
-            //     }
-            // }
-            // if (element.checked == true && element.value === "someoneElse"){
-            //         emails.push(document.getElementById("sendPerson").value);
-            // }
-            // console.log(emails);
+             checkboxes = document.querySelectorAll('input[type="checkbox"]');
+             emails = [];
             
-            // Email.send({
-            //     Host: "smtp.gmail.com",
-            //     Username: "MultiplicationTableStatus",
-            //     Password: "Believe678",
-            //     To: document.getElementById("sendShoval").value,
-            //     From: "MultiplicationTableStatus@gmail.com",
-            //     Subject: "Sending Email using javascript",
-            //     Body: content,
-            // }).then(function (message) {
+            for(let i = 0 ; i < (checkboxes.length - 1) ; i++){
+
+                if(checkboxes[i].checked){
+                    emails.push(checkboxes[i].value);
+                }
+            }
+            if (checkboxes[3].checked == true){
+                let addMail = document.getElementById("sendPerson").value;
+                emails.push(addMail);                
+            }
+            Email.send({
+            Host: "smtp.gmail.com",
+            Username: "MultiplicationTableStatus",
+            Password: "Believe678",
+            To: emails,
+            From: "MultiplicationTableStatus@gmail.com",
+            Subject: "Sending Email using javascript",
+            Body: content,
+            })
+            // .then(function (message) {
             //     alert("mail sent successfully");
-            // }); 
-        }
+            // })
+            alert("mail sent successfully");
+            return
+ 
+        };
+          // var s = document.createElement("input");
+                // var m = document.getElementById("sendMails");
+                // s.style.marginLeft = "100px";
+                // s.style.border = "solid 2px black";
+                // m.appendChild(s);
+            // if (checkboxes[3] == true){
+
+            //     let newMail = document.getElementById("sendPerson").value;
+            //     emails.push(document.getElementById("sendPerson").value);
+            //     alert("vds")
+            // }
+         
+        // }
              
 
 
@@ -140,15 +160,18 @@
         <form method="post" name="send">
           <textarea id="tellingStroy" required></textarea><br /><br />
           <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
+          <div id="sendEmails">
             <label>
-                <input type="checkbox" id="shovalic" value="shovalmo7@gmail.com" onchange="onChange(this)"/>שובל<br>
-                <input type="checkbox" id="mom" value="shovi743@gmail.com" onchange="onChange(this)"/>אמא<br>
-                <input type="checkbox" id="father"  value="sa3@gmail.com" onchange="onChange(this)" />אבא<br>
-                <input type="checkbox" id="elsePerson" value="someoneElse" onchange="onChange(this)"/>מישהי/ו אחר
-                <input type="email" id="sendPerson" placeholder="הזיני מטה את כתובת מייל"  disabled>
+                <input type="checkbox" id="shovalic" value="shovalmo7@gmail.com"/>שובל<br>
+                <input type="checkbox" id="mom" value="shovi743@gmail.com"/>אמא<br>
+                <input type="checkbox" id="father"  value="sa3@gmail.com"  />אבא<br>
+                <input type="checkbox" id="elsePerson" value="someoneElse" onclick="nice()"/>מישהי/ו אחר
+                <input type="email" id="sendPerson" placeholder="הזיני את כתובת מייל" value="" required><br>
                 <!-- <input type="submit" id="updateMail" value="עדכון" onclick="updateSendMail()"><br /> -->
                 <!-- <br /> -->
             </label>
+          </div>  
+      
         <!-- <div id="sendItem"> -->
             <button id="sendMail" onclick="turn()">שלח</button>
             <!-- <input type="submit" id="sendMail" value="מאשרת לשלוח" onclick="sendEmail()"/> -->

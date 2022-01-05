@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send mail</title>
+
+    <style>
+        #sendPerson{
+            margin-left: 5px;
+            margin-top: -18px;
+            text-align: center;
+        }
+
+        #sendMail{
+            margin-top: 10px;
+        }
+
+        #updateMail{
+            display: none;
+            margin-left: 275px;
+            margin-top: -21px;
+        }
+
+
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="text/javascript">
+
+        function turn() {
+            let content = document.getElementById("tellingStroy").value;
+             checkboxes = document.querySelectorAll('input[type="checkbox"]');
+             emails = [];
+            
+            for(let i = 0 ; i < (checkboxes.length - 1) ; i++){
+
+                if(checkboxes[i].checked){
+                    emails.push(checkboxes[i].value);
+                }
+            }
+            if (checkboxes[3].checked == true){
+                let addMail = document.getElementById("sendPerson").value;
+                emails.push(addMail);                
+            }
+            Email.send({
+            Host: "smtp.gmail.com",
+            Username: "MultiplicationTableStatus",
+            Password: "Believe678",
+            To: emails,
+            From: "MultiplicationTableStatus@gmail.com",
+            Subject: "Sending Email using javascript",
+            Body: content,
+            })
+            // .then(function (message) {
+            //     alert("mail sent successfully");
+            // })
+            alert("mail sent successfully");
+            return
+ 
+        };
+            
+    </script>
+     
+     
+    
+</head>
+<body>
+    <div id="process">
+        <b><p id="processForm">
+            טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
+          </p></b>
+        <form method="post" name="send">
+          <textarea id="tellingStroy" required></textarea><br /><br />
+          <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
+          <div id="sendEmails">
+            <label>
+                <input type="checkbox" id="shovalic" value="shovalmo7@gmail.com"/>שובל<br>
+                <input type="checkbox" id="mom" value="shovi743@gmail.com"/>אמא<br>
+                <input type="checkbox" id="father"  value="sa3@gmail.com"  />אבא<br>
+                <input type="checkbox" id="elsePerson" value="someoneElse" onclick="nice()"/>מישהי/ו אחר
+                <input type="email" id="sendPerson" placeholder="הזיני את כתובת מייל" value="" required><br>
+            </label>
+          </div>  
+      
+        <button id="sendMail" onclick="turn()">מאשרת לשלוח</button>
+      </form>
+    </div>
+
+    
+</body>
+</html>

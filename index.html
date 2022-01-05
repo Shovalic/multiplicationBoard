@@ -214,42 +214,23 @@
         </button>
       </div>
       <div id="process">
-        <b
-          ><p id="processForm">
-            טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
-          </p></b
-        >
-        <form method="post" action="choice" name="send">
+        <b><p id="processForm">
+          טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
+        </p></b>
+        <form method="post" name="send">
           <textarea id="tellingStroy" required></textarea><br /><br />
           <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
-          <input type="checkbox" id="shoval" value="shovalmo7@gmail.com" />
-          <label for="Shoval">שובל</label><br />
-          <input type="checkbox" id="mom" name="mom" value="mom" />
-          <label for="mom">אמא</label><br />
-          <input type="checkbox" id="father" name="father" value="father" />
-          <label for="father">אבא</label><br />
-          <input
-            type="checkbox"
-            id="elsePerson"
-            name="elsePerson"
-            value="elsePerson"
-          />
-          <label for="elsePerson">מישהי/ו אחר</label>
-          <input
-            type="email"
-            id="sendPerson"
-            placeholder="הזיני כתובת מייל"
-          /><br /><br />
-          <!-- <button id="sendMail" onclick="sendMSG()">מאשרת לשלוח</button> -->
-
-          <input
-            type="submit"
-            id="sendMail"
-            value="מאשרת לשלוח"
-            onclick="sendEmail()"
-          />
-        </form>
-        <!--נשלח בהצלחה-->
+          <div id="sendEmails">
+            <label>
+                <input type="checkbox" id="shovalic" value="shovalmo7@gmail.com"/>שובל<br>
+                <input type="checkbox" id="mom" value="shovi743@gmail.com"/>אמא<br>
+                <input type="checkbox" id="father"  value="sa3@gmail.com"  />אבא<br>
+                <input type="checkbox" id="elsePerson" value="someoneElse" onclick="nice()"/>מישהי/ו אחר
+                <input type="email" id="sendPerson" placeholder="הזיני את כתובת מייל" value="" required><br>
+            </label>
+          </div>
+            <button id="sendMail" onclick="turn()">מאשרת לשלוח</button>
+         </form>
       </div>
     </div>
   </body>

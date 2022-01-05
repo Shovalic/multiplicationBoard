@@ -159,7 +159,16 @@ button:hover {
 }
 
 #sendPerson {
-  width: 40%;
+  width: 50%;
+  margin-left: 5px;
+  margin-top: -18px;
+  text-align: center;
+}
+
+#updateMail{
+  display: none;
+  margin-left: 275px;
+  margin-top: -21px;
 }
 
 table {
@@ -219,6 +228,7 @@ table {
   border-color: black;
   width: 200px;
   margin-right: 80px;
+  margin-top: 10px;
 }
 
 #sendMail:hover {

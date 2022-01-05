@@ -50,7 +50,7 @@ function done() {
     div.appendChild(e);
     document.getElementById("playagain").style.display = "block";
     return;
-    } 
+  }
 }
 
 function practiceMore() {
@@ -65,25 +65,32 @@ function practiceMore() {
   }
 }
 
-// function sendMSG() {
-//   let content = document.getElementById("tellingStroy").value;
-//   let choice = document.getElementById("shoval").value;
-//   if (choice) {
-//     alert("vsjkkj");
-//   }
-// }
-
-function sendEmail() {
+function turn() {
   let content = document.getElementById("tellingStroy").value;
+  checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  emails = [];
+
+  for (let i = 0; i < checkboxes.length - 1; i++) {
+    if (checkboxes[i].checked) {
+      emails.push(checkboxes[i].value);
+    }
+  }
+  if (checkboxes[3].checked == true) {
+    let addMail = document.getElementById("sendPerson").value;
+    emails.push(addMail);
+  }
   Email.send({
     Host: "smtp.gmail.com",
-    Username: "MultiplicationTableStatus@gmail.com",
+    Username: "MultiplicationTableStatus",
     Password: "Believe678",
-    To: document.getElementById("shoval").value,
+    To: emails,
     From: "MultiplicationTableStatus@gmail.com",
     Subject: "Sending Email using javascript",
     Body: content,
-  }).then(function (message) {
-    alert("mail sent successfully");
   });
+  // .then(function (message) {
+  //     alert("mail sent successfully");
+  // })
+  alert("mail sent successfully");
+  return;
 }
