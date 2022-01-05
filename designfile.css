@@ -160,15 +160,7 @@ button:hover {
 
 #sendPerson {
   width: 50%;
-  margin-left: 5px;
-  margin-top: -18px;
   text-align: center;
-}
-
-#updateMail{
-  display: none;
-  margin-left: 275px;
-  margin-top: -21px;
 }
 
 table {
@@ -227,8 +219,8 @@ table {
   flex-direction: column;
   border-color: black;
   width: 200px;
-  margin-right: 80px;
-  margin-top: 10px;
+  margin-right: 100px;
+  margin-top: 20px;
 }
 
 #sendMail:hover {
@@ -394,7 +386,11 @@ table {
     font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
     }
-     
+    
+  #sendPerson {
+    width: 50%;
+    text-align: center;
+  }  
 }
 
 @media (max-width: 375px){
@@ -523,6 +519,11 @@ table {
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
+  }
+
+  #sendPerson {
+    width: 50%;
+    text-align: center;
   }
 }
 
