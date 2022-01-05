@@ -220,7 +220,7 @@ table {
   border-color: black;
   width: 200px;
   margin-right: 100px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #sendMail:hover {
@@ -388,7 +388,6 @@ table {
     }
     
   #sendPerson {
-    width: 50%;
     text-align: center;
   }  
 }
