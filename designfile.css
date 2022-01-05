@@ -407,6 +407,8 @@ table {
     align-items: center;
     font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
+    position: sticky;
+    top: 20px;
   }
 
   h1, pre{

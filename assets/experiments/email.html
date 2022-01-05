@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send mail</title>
+
+    <style>
+        #sendPerson{
+            display: none;
+            margin-left: 100px;
+            margin-top: -18px;
+            text-align: center;
+        }
+
+        #sendMail{
+            margin-top: 10px;
+        }
+
+        #updateMail{
+            display: none;
+            margin-left: 275px;
+            margin-top: -21px;
+        }
+
+
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="text/javascript">
+
+        // function onChange(element) {
+        //     if (element.checked == true && element.value == "shovalmo7@gmail.com"){
+        //         alert("the mail was sent to:" + element.name)
+        //     }
+
+            // if(document.getElementById("shoval").element.checked == true){
+            //     alert('Agreement changed to ' + element.checked);
+            // }else if(document.getElementById("mom").element.checked == true){
+            //     let mom = document.getElementById("mom").value;
+            // }else if(document.getElementById("father").element.checked == true){
+            //     let father = document.getElementById("father").value;
+            // }else{
+            //     let someoneElse = document.getElementById("sendPerson").value;
+            // }
+        // }
+
+        function onChange(element) {
+            let array5 = [];
+            let array6 = [];
+            let array7 = [];
+            let array8 = [];
+            if (element.checked == true && element.value === "shovalmo7@gmail.com"){
+                let array1 = [];
+                let sendShoval = element.value;
+                array1[0] = sendShoval;
+                array5 = array1;
+                console.log(array5)
+            }
+            else if (element.checked == true && element.value === "shovi743@gmail.com"){
+                let sendMom = element.value;
+                let array2 =[]; 
+                array2[0] = sendMom;
+                array6 = array2;
+                console.log(array6)
+            }
+            else if (element.checked == true && element.value === "sa3@gmail.com"){
+                let sendFather = element.value;
+                let array3 =[]; 
+                array3[0] = sendFather;
+                array7 = array3;
+                console.log(array7)
+            }
+            else if (element.checked == true && element.value === "someoneElse"){
+                // const checkboxes = document.querySelectorAll(‘input[type=“checkbox”]’)
+                // const emails = []
+                // for(let i = 0 ; i < checkboxes.length ; i++) {
+                //     if(checkboxes[i].checked) {
+                //         emails.push(checkboxes[i].value)
+                //     }
+                // }
+                // let moment = element.value;
+                // console.log(sendSomeMail)
+                document.getElementById("sendPerson").style.display = "block";
+                document.getElementById("updateMail").style.display = "block";
+                var s = document.createElement("input");
+                var m = document.getElementById("sendMails");
+                s.style.marginLeft = "100px";
+                s.style.border = "solid 2px black";
+                m.appendChild(s);
+                s.value = s.value; 
+                alert(s.value);
+
+                let array4 =[]; 
+                array4[0] = sendSomeMail;
+                array8 = array4;
+                let sendChoice = array5 + array6 + array7;
+                console.log(sendChoice)
+                let btn = document.getElementById("sendMail");
+                let div = document.getElementById("sentItem");
+                btn.addEventListener("click", () => {
+                let content = document.getElementById("tellingStroy").value;
+                // let creatEmail = onChange();
+                // let sendChoiceMail = sendChoice;
+                // let sendShoval = document.getElementById("shovalic").value;
+                // let sendMom = document.getElementById("mom").value;
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "MultiplicationTableStatus",
+                    Password: "Believe678",
+                    To: element.value,
+                    From: "MultiplicationTableStatus@gmail.com",
+                    Subject: "Sending Email using javascript",
+                    Body: content,
+                }).then(function (message) {
+                    alert("mail sent successfully");
+                });
+                });
+            }
+        }
+            
+    </script>
+                <!-- // let sendMail;
+                // if (element.value == ""){
+                //     sendMail = s.value;
+                //     alert(sendMail);
+
+                // }
+              
+                // if (element.value !== sendSomeMail){
+                //     var s = document.createElement("input");
+                //     var m = document.getElementById("sendMails");
+                //     s.style.marginLeft = "100px";
+                //     m.appendChild(s);
+                //     return;
+                // }
+                    // let sendSomeMail = document.getElementById("sendPerson").value;
+                    // console.log("the is:" + sendSomeMail)
+                    // document.getElementById("sendPerson").value = sendSomeMail;
+                    // console.log("again" + sendSomeMail)
+                    // return;
+                
+                
+                // let functionCall = updateSendMail();
+                // alert (mailAddreess)
+              
+
+            
+
+        // function updateSendMail(){
+        //     let mailAddreess = document.getElementById("sendPerson").value;
+ 
+        // }
+        // updateSendMail();
+
+
+
+        // function sendEmail() {
+        //     let content = document.getElementById("tellingStroy").value;
+        //     // let creatEmail = onChange();
+        //     let sendChoiceMail = sendChoice;
+        //     alert("cd")
+        //     // let sendShoval = document.getElementById("shovalic").value;
+        //     // let sendMom = document.getElementById("mom").value;
+        //     Email.send({
+        //         Host: "smtp.gmail.com",
+        //         Username: "MultiplicationTableStatus@gmail.com",
+        //         Password: "Start56now",
+        //         To: sendChoiceMail,
+        //         From: "MultiplicationTableStatus@gmail.com",
+        //         Subject: "Sending Email using javascript",
+        //         Body: content,
+        //     }).then(function (message) {
+        //         alert("mail sent successfully");
+        //     });
+        //     alert("nldks")
+        // } -->
+     
+    
+</head>
+<body>
+    <div id="process">
+        <b
+          ><p id="processForm">
+            טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
+          </p></b
+        >
+        <form method="post" action="choice" name="send">
+          <textarea id="tellingStroy" required></textarea><br /><br />
+          <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
+          <div id="sendMails">
+            <label>
+                <input type="checkbox" id="shovalic" value="shovalmo7@gmail.com" onchange="onChange(this)"/>שובל<br>
+                <input type="checkbox" id="mom" value="shovi743@gmail.com" onchange="onChange(this)"/>אמא<br>
+                <input type="checkbox" id="father"  value="sa3@gmail.com" onchange="onChange(this)" />אבא<br>
+                <input type="checkbox" id="elsePerson" value="someoneElse" onchange="onChange(this)"/>מישהי/ו אחר
+                <input type="email" id="sendPerson" placeholder="הזיני מטה את כתובת מייל"  disabled>
+                <input type="submit" id="updateMail" value="עדכון" onclick="updateSendMail()"><br />
+                <!-- <br /> -->
+            </label>
+          </div>
+        <div id="sendItem">
+            <button id="sendMail">שלח</button>
+            <!-- <input type="submit" id="sendMail" value="מאשרת לשלוח" onclick="sendEmail()"/> -->
+
+        </div>
+
+      
+   
+          <!-- <button id="sendMail" onclick="sendMSG()">מאשרת לשלוח</button> -->
+
+
+      </div>
+
+      </form>
+    
+</body>
+</html>
