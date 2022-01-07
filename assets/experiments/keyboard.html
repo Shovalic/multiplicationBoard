@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard effect</title>
+    <script type="text/javascript">
+        
+
+        var i = 0;
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+        if (i < txt.length) {
+            var p = document.createElement("p");
+            p.innerHTML = 'Lorem ipsum typing effect!'; /* The text */
+            var div = document.getElementById("div");
+            div.appendChild(p);
+            return;
+            document.getElementById("type").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+
+        if (res != studentResult) {
+        var w = document.createElement("p");
+        w.innerHTML = "יש כמה שגיאות, חזרי על החומר!";
+        var divWrong = document.getElementById("tableMultiply");
+        divWrong.appendChild(w);
+        return;
+      }
+        
+    </script>
+</head>
+<body>
+    <div id="type">
+
+    </div>
+
+</body>
+</html>
