@@ -187,6 +187,8 @@ table {
 
 #nice {
   width: 300px;
+  margin-top: 5px;
+  margin-left: 100px;
 }
 
 #resultShow {
@@ -194,6 +196,8 @@ table {
   direction: rtl;
   text-align: center;
   border-color: purple;
+  margin-top: 15px;
+  margin-left: 70px;
 }
 
 #processForm{
