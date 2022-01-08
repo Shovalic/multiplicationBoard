@@ -1,5 +1,5 @@
 function checkNow() {
-  let count = 0;
+  let count = 0; 
   for (i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
       const res = i * j;
@@ -12,25 +12,38 @@ function checkNow() {
   while (count>=0){
     var m = document.createElement("p");
     var divMessage = document.getElementById("tableMultiply");
+    var scorePara = document.createElement("p");
+    var divScore = document.getElementById("score");
     if (count >= 3){
       m.innerHTML = "יש כמה שגיאות, חזרי על החומר!";
       divMessage.appendChild(m);
+      let scoreStudent = document.getElementById("scoreTable").value; 
+      scoreStudent = 100 - count;
+      document.getElementById("scoreTable").value = scoreStudent;
       break;
     }else if (count == 2){
-      m.innerHTML = "יש 2 טעויות, חזרי על החומר!";
+      m.innerHTML = "יש שתי טעויות, חזרי על החומר!";
       divMessage.appendChild(m);
+      let scoreStudent = document.getElementById("scoreTable").value; 
+      scoreStudent = 100 - count;
+      document.getElementById("scoreTable").value = scoreStudent;
       break;
     }else if (count == 1){
       m.innerHTML = "יש טעות אחת, חזרי על החומר!";
       divMessage.appendChild(m);
+      let scoreStudent = document.getElementById("scoreTable").value;
+      scoreStudent = 100 - count;
+      document.getElementById("scoreTable").value = scoreStudent;
       break;
     }else{
       m.innerHTML = "פתרת הכל נכון, כל הכבוד!";
       divMessage.appendChild(m);
+      document.getElementById("scoreTable").value = 100;
       break;
     }
   }
 }
+
 
 function reset() {
   for (i = 1; i <= 10; i++) {

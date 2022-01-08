@@ -42,8 +42,13 @@ body {
 }
 
 h1{
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 15px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 pre {
@@ -76,7 +81,6 @@ pre {
 }
 
 #tableMultiply {
-  padding-top: 20px;
   padding-bottom: 20px;
   background-color: hsl(315, 60%, 70%);
   width: 90%;
@@ -111,9 +115,26 @@ pre {
   margin-left: -280px;
   font-size: 20px;
 }
-caption {
-  font-size: 40px;
-  margin-bottom: 10px;
+
+#score{
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#score p{
+  margin-left: 5px;
+}
+
+#scoreTable{
+  padding-right: 0px;
+  direction: rtl;
+  width: 50px;
+  border-style: hidden;
+  background-color: hsl(315, 60%, 70%);
+  font-weight: bolder;
 }
 
 #practice {
