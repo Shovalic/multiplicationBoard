@@ -330,7 +330,6 @@ table {
          url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
          url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
   }
-  
 
   #personalNote{
       width: 100%;
@@ -376,6 +375,11 @@ table {
     border-style: hidden;
     background-color: hsl(315, 60%, 70%);
     font-weight: bolder;
+    color: black;
+  }
+
+  :disabled{
+    background-color: hsl(315, 60%, 70%);
     color: black;
   }
 

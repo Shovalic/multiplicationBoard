@@ -7,18 +7,27 @@
     <title>Multiplay Game</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script async src="script.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="personalNote">
-        <h1>בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל </h1>
+        <h1>בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
         <div>
-          <input type="text" id="userName" placeholder="לפני שנתחיל, מה שמך?" value="" required>
+          <input
+            type="text"
+            id="userName"
+            placeholder="לפני שנתחיל, מה שמך?"
+            value=""
+            required
+          />
         </div>
         <div class="typewrite">
           <pre>
@@ -36,13 +45,10 @@
         </h1>
         <div id="score">
           <p>הניקוד שלך הוא:</p>
-          <input type="number" id="scoreTable" value="0" disabled>     
+          <input type="number" id="scoreTable" value="0" disabled />
         </div>
         <form action="" name="f1" id="tableShow" onsubmit>
-          
           <table style="direction: ltr">
-            
-            
             <tr id="numberSize">
               <th>X</th>
               <th>1</th>
@@ -202,17 +208,23 @@
         <div id="nice" style="display: none; direction: ltr">
           <tr>
             <td>
-              <input type="number" id="firstMult" disabled/>
+              <input type="number" id="firstMult" disabled />
             </td>
             <td>X</td>
             <td>
-              <input type="number" id="secMult" disabled/>
+              <input type="number" id="secMult" disabled />
             </td>
             <td>=</td>
             <td>
-              <input type="number" id="res" placeholder="כמה נראה לך?" required />
+              <input
+                type="number"
+                id="res"
+                placeholder="כמה נראה לך?"
+                required
+              />
             </td>
-            <td><br>
+            <td>
+              <br />
               <input
                 type="submit"
                 id="resultShow"
@@ -227,23 +239,48 @@
         </button>
       </div>
       <div id="process">
-        <b><p id="processForm">
-          טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
-        </p></b>
+        <b
+          ><p id="processForm">
+            טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
+          </p></b
+        >
         <form method="post" name="send">
           <textarea id="tellingStroy" required></textarea><br /><br />
           <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
           <div id="sendEmails">
             <label>
-                <input type="checkbox" id="shovalic" value="shovalmo7@gmail.com"/>שובל<br>
-                <input type="checkbox" id="mom" value="shovi743@gmail.com"/>אמא<br>
-                <input type="checkbox" id="father"  value="sa3@gmail.com"  />אבא<br>
-                <input type="checkbox" id="elsePerson" value="someoneElse" onclick="nice()"/>מישהי/ו אחר
-                <input type="email" id="sendPerson" placeholder="הזיני את כתובת מייל" value="" required><br>
+              <input
+                type="checkbox"
+                id="shovalic"
+                value="shovalmo7@gmail.com"
+              />שובל<br />
+              <input
+                type="checkbox"
+                id="mom"
+                value="shovi743@gmail.com"
+              />אמא<br />
+              <input
+                type="checkbox"
+                id="father"
+                value="sa3@gmail.com"
+              />אבא<br />
+              <input
+                type="checkbox"
+                id="elsePerson"
+                value="someoneElse"
+                onclick="nice()"
+              />מישהי/ו אחר
+              <input
+                type="email"
+                id="sendPerson"
+                placeholder="הזיני את כתובת מייל"
+                value=""
+                required
+              /><br />
             </label>
           </div>
-            <button id="sendMail" onclick="turn()">מאשרת לשלוח</button>
-         </form>
+          <button id="sendMail" onclick="turn()">מאשרת לשלוח</button>
+        </form>
       </div>
     </div>
   </body>
