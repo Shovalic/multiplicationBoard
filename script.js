@@ -18,6 +18,15 @@ function checkNow() {
   divMsg.appendChild(m);
 }
 
+function reset() {
+  for (i = 1; i <= 10; i++) {
+    for (j = 1; j <= 10; j++) {
+      const studentResult = document.getElementById("raw" + i + "-" + j).value;
+      document.getElementById("raw" + i + "-" + j).value = "";
+
+    }
+  }
+}
 let btn = document.getElementById("checkAnswer");
 let div = document.getElementById("nice");
 let res = "";

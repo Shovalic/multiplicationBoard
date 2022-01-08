@@ -16,7 +16,10 @@
   <body>
     <div id="container">
       <div id="personalNote">
-        <h1>משחק לוח הכפל</h1>
+        <h1>ברוכים הבאים למשחק לוח הכפל</h1>
+        <div>
+          <input type="text" id="userName" placeholder="לפני שנתחיל, מה שמך?" value="" required>
+        </div>
         <div class="typewrite">
           <pre>
             טליה החכמה חשבון אוהבת,
@@ -182,6 +185,7 @@
         <button id="readyToCheck" onclick="checkNow()">
           אני בטוחה בעצמי ומוכנה לבדיקה!
         </button>
+        <button id="reset" onclick="reset()">איפוס לוח</button>
 
         <br />
       </div>
@@ -191,15 +195,15 @@
         <div id="nice" style="display: none; direction: ltr">
           <tr>
             <td>
-              <input type="number" id="firstMult" disabled />
+              <input type="number" id="firstMult" disabled/>
             </td>
             <td>X</td>
             <td>
-              <input type="number" id="secMult" disabled />
+              <input type="number" id="secMult" disabled/>
             </td>
             <td>=</td>
             <td>
-              <input type="number" id="res" placeholder="כמה זה?" required />
+              <input type="number" id="res" placeholder="כמה נראה לך?" required />
             </td>
             <td><br>
               <input
