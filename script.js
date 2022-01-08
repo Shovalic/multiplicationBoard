@@ -41,6 +41,7 @@ function reset() {
     }
   }
 }
+
 let btn = document.getElementById("checkAnswer");
 let div = document.getElementById("nice");
 let res = "";
