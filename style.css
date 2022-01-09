@@ -119,10 +119,12 @@ pre {
 #score{
   display: flex;
   margin-top: 5px;
+  margin-right: -200px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   margin-bottom: 15px;
+  font-size: 25px;
 }
 
 #score p{
@@ -137,6 +139,62 @@ pre {
   background-color: hsl(315, 60%, 70%);
   font-weight: bolder;
   color: black;
+  font-size: 25px;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 120px;
+  border: 2px solid;
+  margin-left: -250px;
+  margin-top: -70px;
+}
+
+.time {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 187px;
+  margin-left: -250px;
+  margin-top: -70px;
+}
+
+#resetButton, #pauseButton, #playButton{
+  width: 40px;
+  height: 40px;
+}
+
+.buttonPlay, .buttonReset {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
 }
 
 #practice {
@@ -233,7 +291,7 @@ button {
 }
 
 button:hover {
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
   transition-duration: 1s;
   cursor: pointer;
 }
@@ -382,15 +440,38 @@ table {
       font-family: 'Varela Round', sans-serif;
       }
 
-
+  #score{
+    font-size: 20px;
+    padding-right: 20px;
+  }
   #scoreTable{
     direction: rtl;
     border-style: hidden;
     background-color: hsl(315, 60%, 70%);
     font-weight: bolder;
     color: black;
+    font-size: 20px;
   }
 
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    border: 2px solid;
+    margin-left: -190px;
+    margin-top: -70px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    width: 187px;
+    margin-left: -190px;
+    margin-top: -70px;
+  }
+ 
   :disabled{
     background-color: hsl(315, 60%, 70%);
     color: black;

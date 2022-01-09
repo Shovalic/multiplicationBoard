@@ -43,6 +43,23 @@
           <p>הניקוד שלך הוא:</p>
           <input type="number" id="scoreTable" value="0" disabled />
         </div>
+        <!-- <img src="assets/icon/time-tracking.png" id="stopwatch" alt="stopwatch" onclick="timer()"> -->
+    
+        <div class="stopwatch">
+          <div class="circle">
+            <span class="time" id="display">00:00:00</span>
+          </div>
+          <div class="controls">
+            <button class="buttonReset">
+              <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+            </button>
+            <button class="buttonPlay">
+              <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+              <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+            </button>
+          </div>
+        </div>
+
         <form action="" name="f1" id="tableShow" onsubmit>
           <table style="direction: ltr">
             <tr id="numberSize">
