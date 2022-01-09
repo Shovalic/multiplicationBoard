@@ -18,16 +18,11 @@
   </head>
   <body>
     <div id="container">
+      <!--First section: title, name input, an opening paragraph-->
       <div id="personalNote">
         <h1>בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
         <div>
-          <input
-            type="text"
-            id="userName"
-            placeholder="לפני שנתחיל, מה שמך?"
-            value=""
-            required
-          />
+          <input type="text" id="userName" placeholder="לפני שנתחיל, מה שמך?" value="" required/>
         </div>
         <div class="typewrite">
           <pre>
@@ -39,6 +34,7 @@
           </pre>
         </div>
       </div>
+      <!-- Second section: title, score, table, reset button, check button -->
       <div id="tableMultiply">
         <h1>
           <b> לוח הכפל </b>
@@ -193,15 +189,14 @@
               <td><input type="text" id="raw10-10" value="100" /></td>
             </tr>
           </table>
-          <!-- <input type="button" value="checking" onClick="checkNow()" /> -->
         </form>
         <button id="readyToCheck" onclick="checkNow()">
           אני בטוחה בעצמי ומוכנה לבדיקה!
         </button>
         <button id="reset" onclick="reset()">איפוס לוח</button>
-
         <br />
       </div>
+      <!-- Third section: title, checkAnswer button, exercises generator, check button, popUp msg, next exercise -->
       <div id="practice">
         <h1>ועכשיו, בואי נתרגל!</h1>
         <button id="checkAnswer">אני מוכנה!</button>
@@ -238,12 +233,11 @@
           לתרגיל הבא!
         </button>
       </div>
+      <!-- Forth section: share process - will change -->
       <div id="process">
-        <b
-          ><p id="processForm">
+        <b><p id="processForm">
             טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
-          </p></b
-        >
+          </p></b>
         <form method="post" name="send">
           <textarea id="tellingStroy" required></textarea><br /><br />
           <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>

@@ -151,14 +151,26 @@ pre {
   border-radius: 20%;
   margin-bottom: 10px;
 }
-/* 
-#firstMult, #secMult{
-  background-color: palevioletred;
-} */
 
+#firstMult, #secMult{
+  background-color: hsl(315, 80%, 70%);
+  border: hidden;
+  direction: rtl;
+  text-align: justify;
+  padding-left: -30px;
+  margin: 0px;
+  width: 30px;
+}
+
+#secMult{
+  width: 30px;
+  padding-right: 15px;
+
+}
 :disabled{
   background-color: pink;
   color: black;
+
 }
 #checkAnswer {
   margin-top: 10px;
@@ -248,9 +260,10 @@ table {
 }
 
 #res {
-  width: 120px;
+  width: 130px;
   direction: rtl;
   text-align: center;
+  padding-right: 10px;
 }
 
 #nice {
