@@ -453,6 +453,10 @@ table {
     font-size: 20px;
   }
 
+  :disabled{
+    color: black;
+  }
+
   .circle {
     display: flex;
     justify-content: center;
