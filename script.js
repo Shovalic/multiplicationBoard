@@ -45,7 +45,7 @@ function checkNow() {
 }
 
 
-function reset() {
+function resetTable() {
   for (i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
       const studentResult = document.getElementById("raw" + i + "-" + j).value;
@@ -208,3 +208,5 @@ function turn() {
   alert("mail sent successfully");
   return;
 }
+
+

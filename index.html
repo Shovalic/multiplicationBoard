@@ -17,6 +17,7 @@
     <script async src="script.js"></script>
   </head>
   <body>
+    <div id="topBanner"></div>
     <div id="container">
       <!--First section: title, name input, an opening paragraph-->
       <div id="personalNote">
@@ -34,11 +35,32 @@
           </pre>
         </div>
       </div>
+      <div id="navBar">
+        <div id="board">
+          <img src="assets/icon/thumbtack.png">
+          <a href="#tableMultiply">לוח הכפל</a>
+        </div>
+        <div id="tirgul">
+          <img src="assets/icon/thumbtack.png">
+          <a href="#practice">תרגול עצמי</a>
+        </div>
+        <div id="howWas">
+          <img src="assets/icon/thumbtack.png">
+          <a href="#process">איך היה?</a>
+        </div>
+      </div>
+      <div id="explainTable">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+
       <!-- Second section: title, score, table, reset button, check button -->
       <div id="tableMultiply">
         <h1>
           <b> לוח הכפל </b>
         </h1>
+        <p id="instrctionTable"><b>לפניכם לוח הכפל. הכניסו את התוצאה המתאימה ולבסוף, בדקו את תשובותכם.<br>
+         אם תרצו, תוכלו למדוד לכם זמן. מוכנים להגדיר לעצמכם שיא חדש?</b></p>
         <div id="score">
           <p>הניקוד שלך הוא:</p>
           <input type="number" id="scoreTable" value="0" disabled />
@@ -49,7 +71,7 @@
           </div>
           <div class="controls">
             <button class="buttonReset">
-              <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+              <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg"/>
             </button>
             <button class="buttonPlay">
               <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
@@ -207,12 +229,20 @@
         <button id="readyToCheck" onclick="checkNow()">
           אני בטוחה בעצמי ומוכנה לבדיקה!
         </button>
-        <button id="reset" onclick="reset()">איפוס לוח</button>
+        <!-- <img src="assets/icon/reset.jpg" onclick="resetTable()"> -->
+        <button id="reset" onclick="resetTable()">איפוס לוח</button>
         <br />
       </div>
       <!-- Third section: title, checkAnswer button, exercises generator, check button, popUp msg, next exercise -->
       <div id="practice">
-        <h1>ועכשיו, בואי נתרגל!</h1>
+        <h1>ועכשיו, בואו נתרגל!</h1>
+        <p>סמנו אילו תרגילים תרצו לתרגל</p>
+        <label id="checkboxExercise">
+          <input type="checkbox" id="plus" value="addition" onchange="onChange(this)"/>(+) :חיבור<br />
+          <input type="checkbox" id="minus" value="difference" onchange="onChange(this)"/>(-) :חיסור<br />
+          <input type="checkbox" id="multiply" value="multiplication" onchange="onChange(this)"/>(X) :כפל<br />
+          <input type="checkbox" id="devide" value="division" onchange="onChange(this)"/>(:) :חילוק<br />
+        </label>
         <button id="checkAnswer">אני מוכנה!</button>
         <div id="nice" style="display: none; direction: ltr">
           <tr>
@@ -291,5 +321,6 @@
         </form>
       </div>
     </div>
+    <div id="bottomBanner"></div>
   </body>
 </html>

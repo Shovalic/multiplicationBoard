@@ -14,8 +14,6 @@
 }
 
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: lightpink;
   direction: rtl;
   font-size: 20px;
@@ -23,6 +21,52 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 
+#topBanner{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: lightcoral;
+}
+
+#navBar{
+  display: flex;
+}
+
+#board, #tirgul, #howWas{
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-weight: bolder;
+  font-size: 30px;
+  background-image: url(assets/icon/luahShaam.jpg);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+a:link{
+  color: black;
+  text-decoration: none;
+}
+
+a:active{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+img{
+  width: 30px;
+  height: 30px;
+  margin-right: -10px;
+  display: flex;
+  margin-top: -10px;
+}
 #container {
   display: flex;
   flex-direction: column;
@@ -31,7 +75,8 @@ body {
 }
 
 #personalNote {
-  background-color: hsl(315, 40%, 70%);
+  background-image: url(assets/icon//luahShaam.jpg);
+  /* background-color: hsl(315, 40%, 70%); */
   width: 90%;
   display: flex;
   justify-content: center;
@@ -81,8 +126,10 @@ pre {
 }
 
 #tableMultiply {
+  margin-top: 20px;
   padding-bottom: 20px;
-  background-color: hsl(315, 60%, 70%);
+  background-image: url(assets/icon/luahShaam.jpg);
+  /* background-color: hsl(315, 60%, 70%); */
   width: 90%;
   display: flex;
   justify-content: center;
@@ -92,15 +139,19 @@ pre {
   margin-bottom: 10px;
 }
 
+#instrctionTable{
+  line-height: 40px;
+  margin-bottom: 10px;
+}
 #readyToCheck{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
-    display: flex;
-    right: 30px;
-    width: 300px;
-    font-size: 20px;
-    margin-left: 170px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  display: flex;
+  right: 30px;
+  width: 300px;
+  font-size: 20px;
+  margin-left: 170px;
 }
 
 #reset{
@@ -119,11 +170,11 @@ pre {
 #score{
   display: flex;
   margin-top: 5px;
-  margin-right: -200px;
+  margin-right: -250px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 15px;
+  margin-bottom: -30px;
   font-size: 25px;
 }
 
@@ -136,7 +187,8 @@ pre {
   direction: rtl;
   width: 50px;
   border-style: hidden;
-  background-color: hsl(315, 60%, 70%);
+  background-image: url(assets/icon/luahShaam.jpg);
+  /* background-color: hsl(315, 60%, 70%); */
   font-weight: bolder;
   color: black;
   font-size: 25px;
@@ -157,8 +209,8 @@ pre {
   height: 30px;
   width: 120px;
   border: 2px solid;
-  margin-left: -250px;
-  margin-top: -70px;
+  margin-left: -260px;
+  margin-top: -30px;
 }
 
 .time {
@@ -172,7 +224,7 @@ pre {
   justify-content: space-between;
   width: 187px;
   margin-left: -250px;
-  margin-top: -70px;
+  margin-top: -35px;
 }
 
 #resetButton, #pauseButton, #playButton{
@@ -181,12 +233,22 @@ pre {
 }
 
 .buttonPlay, .buttonReset {
+  height: 0px;
   cursor: pointer;
-  background: transparent;
+  background: none;
   padding: 0;
   border: none;
   margin: 0;
   outline: none;
+}
+
+.buttonPlay{
+  margin-top: 0px;
+  margin-left: -20px;
+}
+
+.buttonReset{
+  margin-top: 0px;
 }
 
 #playButton {
@@ -201,7 +263,8 @@ pre {
   width: 90%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: hsl(315, 80%, 70%);
+  background-image: url(assets/icon/luahShaam.jpg);
+  /* background-color: hsl(315, 80%, 70%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,8 +273,27 @@ pre {
   margin-bottom: 10px;
 }
 
+#checkboxExercise{
+  direction: rtl;
+  display: flex;
+  margin-top: 10px;
+
+}
+
+input[type=checkbox]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+  margin-top: 5px;
+}
+
 #firstMult, #secMult{
-  background-color: hsl(315, 80%, 70%);
+  background-image: url(assets/icon/luahShaam.jpg);
+  /* background-color: hsl(315, 80%, 70%); */
   border: hidden;
   direction: rtl;
   text-align: justify;
@@ -388,6 +470,13 @@ table {
 
 ::-webkit-scrollbar-thumb:hover{
   background: hsl(315, 40%, 70%);
+}
+
+#bottomBanner{
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  background-color: lightcoral;
 }
 
 @media (min-width: 375px) and (max-width: 828px){
