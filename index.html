@@ -280,8 +280,18 @@
       <!-- Forth section: share process - will change -->
       <div id="process">
         <b><p id="processForm">
-            טליונת, את מוזמנת לשתף איך היה תהליך הלמידה שלך היום
+          לחצו על הסמיילי המתאים המתאר איך היה לכם התרגול היום
           </p></b>
+          <div id="smiles">
+            <img class="tooltip" id="successPic" src="assets/icon/success.png" onclick="success()">
+            <span class="tooltiptext">Tooltip text</span>
+            <img id="likePic" src="assets/icon/like.png" onclick="like()">
+            <img id="goodPic" src="assets/icon/good.png" onclick="good()">
+            <img id="repeatPic" src="assets/icon/repeat.png" onclick="repeat()">
+            <img id="frustratedPic" src="assets/icon/frustrated.png" onclick="frustrated()">
+            <img id="confusedPic" src="assets/icon/confused.png" onclick="confused()">
+            <img id="consentratePic" src="assets/icon/consentrate.png" onclick="consentrate()">
+          </div>
         <form method="post" name="send">
           <textarea id="tellingStroy" required></textarea><br /><br />
           <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>

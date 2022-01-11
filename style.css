@@ -327,7 +327,8 @@ input[type=checkbox]{
 #process {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: hsl(315, 100%, 70%);
+  background-image: url(assets/icon/luahShaam.jpg);
+  /* background-color: hsl(315, 100%, 70%); */
   width: 90%;
   display: flex;
   justify-content: center;
@@ -471,6 +472,83 @@ table {
 ::-webkit-scrollbar-thumb:hover{
   background: hsl(315, 40%, 70%);
 }
+
+#smiles{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 50px;
+  background-color: pink;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+} 
+
+ #confusedPic, #repeatPic, #goodPic, #likePic{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+#consentratePic, #frustratedPic, #successPic{
+  width: 110px;
+  height: 85px;
+  display: block;
+  display: flex;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+#goodPic{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#successPic{
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
 
 #bottomBanner{
   width: 100%;
