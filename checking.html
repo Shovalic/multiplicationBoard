@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>check</title>
+        <link rel="stylesheet" href="checking.css"/>
+        <link rel="stylesheet" href="topWebsite/topWebsite.css"/>
+        <link rel="stylesheet" href="mainContainerWebsite/openParagraph/openParagraph.css"/>
+        <link rel="stylesheet" href="mainContainerWebsite/navigationBar/navigationBar.css"/>
+        <link rel="stylesheet" href="mainContainerWebsite/multiplicationBoard/multiplicationBoard.css"/>
+        <link rel="stylesheet" href="mainContainerWebsite/practice/practice.css"/>
+        <link rel="stylesheet" href="mainContainerWebsite/process/process.css"/>
+        <link rel="stylesheet" href="bottomWebsite/bottomWebsite.css"/>
+
+        <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap"
+          rel="stylesheet"/>
+    
+        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+        <script async src="mainContainerWebsite/multiplicationBoard/multiplicationBoard.js"></script>
+        <script async src="mainContainerWebsite/practice/practice.js"></script>
+        <script async src="mainContainerWebsite/process/process.js"></script>
+        <!-- <script async src="script.js"></script> -->
+    </head>
+    <body>
+        <div id="topBanner"></div>
+        <div class="mainContainer">
+            <div class="openParagraph">
+                <h1 class="headers">בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
+                <div>
+                  <input type="text" id="userNameInsertion" placeholder="לפני שנתחיל, מה שמך?" value="" required/>
+                </div>
+                <div class="typeWriteOpenParagraph">
+                    <pre>
+                        לָמַדְתָּ, הַשְׁקָעַת וַאֲפִלּוּ גַּם חָרַשְׁתָּ
+                        וְעַכְשָׁו נוּכַל לְהַגִּיד שֶׁהִצְלַחְתָּ!
+                        לֹא לְמַהֵר בִּשְׁאֵלוֹת הַקַּלּוּת וְלֹא לְהִבָּהֵל מֵהַשְּׁאֵלוֹת הַקָּשׁוֹת,
+                        כָּךְ בְּוַדָּאוּת - נִרְאֶה גַּם תּוֹצָאוֹת!
+                    </pre>
+                </div>
+            </div>
+            <div class="navigationBar">
+                <div id="transitionToMuliplicationBoard">
+                  <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
+                  <a id="navigationBarLink" href="#multiplicationBoard">לוח הכפל</a>
+                </div>
+                <div id="transitionToPracticeExercises">
+                  <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
+                  <a id="navigationBarLink" href="#practice">תרגול עצמי</a>
+                </div>
+                <div id="transitionToHowWas">
+                    <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
+                    <a id="navigationBarLink" href="#process">איך היה?</a>
+                </div>
+            </div>
+            <div class="multiplicationBoardVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="multiplicationBoard">
+                <h1>לוח הכפל</h1>
+                <p id="instrctionMultiplicationBoard">לפניכם לוח הכפל. הכניסו את התוצאה המתאימה ולבסוף, בדקו את תשובותכם.<br>
+                    אם תרצו, תוכלו למדוד לכם זמן. מוכנים להגדיר לעצמכם שיא חדש?</p>
+                <div id="scoreMultiplicationBoard">
+                    <p>הניקוד שלך הוא:</p>
+                    <input type="text" id="inputScoreMultiplicationBoard" value="0" disabled />
+                </div>
+                <div class="stopwatch">
+                    <div class="rectangle">
+                      <span class="time" id="displayTime">00:00:00</span>
+                    </div>
+                    <div class="controls">
+                      <button class="buttonReset">
+                        <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg"/>
+                      </button>
+                      <button class="buttonPlay">
+                        <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+                        <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+                      </button>
+                    </div>
+                </div>
+                <form action="" onsubmit>
+                    <table id="multiplicationBoardTable">
+                        <tr id="horizontalNumber">
+                            <th>X</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">1</td>
+                            <td><input type="text" id="raw1-1" value="1" /></td>
+                            <td><input type="text" id="raw1-2" value="2" /></td>
+                            <td><input type="text" id="raw1-3" value="3" /></td>
+                            <td><input type="text" id="raw1-4" value="4" /></td>
+                            <td><input type="text" id="raw1-5" value="5" /></td>
+                            <td><input type="text" id="raw1-6" value="6" /></td>
+                            <td><input type="text" id="raw1-7" value="7" /></td>
+                            <td><input type="text" id="raw1-8" value="8" /></td>
+                            <td><input type="text" id="raw1-9" value="9" /></td>
+                            <td><input type="text" id="raw1-10" value="10" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">2</td>
+                            <td><input type="text" id="raw2-1" value="2" /></td>
+                            <td><input type="text" id="raw2-2" value="4" /></td>
+                            <td><input type="text" id="raw2-3" value="6" /></td>
+                            <td><input type="text" id="raw2-4" value="8" /></td>
+                            <td><input type="text" id="raw2-5" value="10" /></td>
+                            <td><input type="text" id="raw2-6" value="12" /></td>
+                            <td><input type="text" id="raw2-7" value="14" /></td>
+                            <td><input type="text" id="raw2-8" value="16" /></td>
+                            <td><input type="text" id="raw2-9" value="18" /></td>
+                            <td><input type="text" id="raw2-10" value="20" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">3</td>
+                            <td><input type="text" id="raw3-1" value="3" /></td>
+                            <td><input type="text" id="raw3-2" value="6" /></td>
+                            <td><input type="text" id="raw3-3" value="9" /></td>
+                            <td><input type="text" id="raw3-4" value="12" /></td>
+                            <td><input type="text" id="raw3-5" value="15" /></td>
+                            <td><input type="text" id="raw3-6" value="18" /></td>
+                            <td><input type="text" id="raw3-7" value="21" /></td>
+                            <td><input type="text" id="raw3-8" value="24" /></td>
+                            <td><input type="text" id="raw3-9" value="27" /></td>
+                            <td><input type="text" id="raw3-10" value="30" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">4</td>
+                            <td><input type="text" id="raw4-1" value="4" /></td>
+                            <td><input type="text" id="raw4-2" value="8" /></td>
+                            <td><input type="text" id="raw4-3" value="12" /></td>
+                            <td><input type="text" id="raw4-4" value="16" /></td>
+                            <td><input type="text" id="raw4-5" value="20" /></td>
+                            <td><input type="text" id="raw4-6" value="24" /></td>
+                            <td><input type="text" id="raw4-7" value="28" /></td>
+                            <td><input type="text" id="raw4-8" value="32" /></td>
+                            <td><input type="text" id="raw4-9" value="36" /></td>
+                            <td><input type="text" id="raw4-10" value="40" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">5</td>
+                            <td><input type="text" id="raw5-1" value="5" /></td>
+                            <td><input type="text" id="raw5-2" value="10" /></td>
+                            <td><input type="text" id="raw5-3" value="15" /></td>
+                            <td><input type="text" id="raw5-4" value="20" /></td>
+                            <td><input type="text" id="raw5-5" value="25" /></td>
+                            <td><input type="text" id="raw5-6" value="30" /></td>
+                            <td><input type="text" id="raw5-7" value="35" /></td>
+                            <td><input type="text" id="raw5-8" value="40" /></td>
+                            <td><input type="text" id="raw5-9" value="45" /></td>
+                            <td><input type="text" id="raw5-10" value="50" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">6</td>
+                            <td><input type="text" id="raw6-1" value="6" /></td>
+                            <td><input type="text" id="raw6-2" value="12" /></td>
+                            <td><input type="text" id="raw6-3" value="18" /></td>
+                            <td><input type="text" id="raw6-4" value="24" /></td>
+                            <td><input type="text" id="raw6-5" value="30" /></td>
+                            <td><input type="text" id="raw6-6" value="36" /></td>
+                            <td><input type="text" id="raw6-7" value="42" /></td>
+                            <td><input type="text" id="raw6-8" value="48" /></td>
+                            <td><input type="text" id="raw6-9" value="54" /></td>
+                            <td><input type="text" id="raw6-10" value="60" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">7</td>
+                            <td><input type="text" id="raw7-1" value="7" /></td>
+                            <td><input type="text" id="raw7-2" value="14" /></td>
+                            <td><input type="text" id="raw7-3" value="21" /></td>
+                            <td><input type="text" id="raw7-4" value="28" /></td>
+                            <td><input type="text" id="raw7-5" value="35" /></td>
+                            <td><input type="text" id="raw7-6" value="42" /></td>
+                            <td><input type="text" id="raw7-7" value="49" /></td>
+                            <td><input type="text" id="raw7-8" value="56" /></td>
+                            <td><input type="text" id="raw7-9" value="63" /></td>
+                            <td><input type="text" id="raw7-10" value="70" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">8</td>
+                            <td><input type="text" id="raw8-1" value="8" /></td>
+                            <td><input type="text" id="raw8-2" value="16" /></td>
+                            <td><input type="text" id="raw8-3" value="24" /></td>
+                            <td><input type="text" id="raw8-4" value="32" /></td>
+                            <td><input type="text" id="raw8-5" value="40" /></td>
+                            <td><input type="text" id="raw8-6" value="48" /></td>
+                            <td><input type="text" id="raw8-7" value="56" /></td>
+                            <td><input type="text" id="raw8-8" value="64" /></td>
+                            <td><input type="text" id="raw8-9" value="72" /></td>
+                            <td><input type="text" id="raw8-10" value="80" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">9</td>
+                            <td><input type="text" id="raw9-1" value="9" /></td>
+                            <td><input type="text" id="raw9-2" value="18" /></td>
+                            <td><input type="text" id="raw9-3" value="27" /></td>
+                            <td><input type="text" id="raw9-4" value="36" /></td>
+                            <td><input type="text" id="raw9-5" value="45" /></td>
+                            <td><input type="text" id="raw9-6" value="54" /></td>
+                            <td><input type="text" id="raw9-7" value="63" /></td>
+                            <td><input type="text" id="raw9-8" value="72" /></td>
+                            <td><input type="text" id="raw9-9" value="81" /></td>
+                            <td><input type="text" id="raw9-10" value="90" /></td>
+                        </tr>
+                        <tr>
+                            <td id="verticalNumber">10</td>
+                            <td><input type="text" id="raw10-1" value="10" /></td>
+                            <td><input type="text" id="raw10-2" value="20" /></td>
+                            <td><input type="text" id="raw10-3" value="30" /></td>
+                            <td><input type="text" id="raw10-4" value="40" /></td>
+                            <td><input type="text" id="raw10-5" value="50" /></td>
+                            <td><input type="text" id="raw10-6" value="60" /></td>
+                            <td><input type="text" id="raw10-7" value="70" /></td>
+                            <td><input type="text" id="raw10-8" value="80" /></td>
+                            <td><input type="text" id="raw10-9" value="90" /></td>
+                            <td><input type="text" id="raw10-10" value="100" /></td>
+                        </tr>
+                    </table>
+                </form>
+                <button id="checkTableResults" onclick="checkTableResultsFunction()">
+                    אני בטוחה בעצמי ומוכנה לבדיקה!
+                </button>
+                <!-- <img src="assets/icon/reset.jpg" onclick="resetTable()"> -->
+                <button id="resetTableInput" onclick="resetTableInputFunction()">איפוס לוח</button>
+                <br><br>
+            </div>
+            <div id="practice">
+                <h1>ועכשיו, בואו נתרגל!</h1>
+                <p>סמנו אילו תרגילים תרצו לתרגל</p>
+                <label id="checkboxExercise">
+                    <input type="checkbox" id="plus" value="addition" onchange="onChange(this)"/>(+) :חיבור<br />
+                    <input type="checkbox" id="minus" value="difference" onchange="onChange(this)"/>(-) :חיסור<br />
+                    <input type="checkbox" id="multiply" value="multiplication" onchange="onChange(this)"/>(X) :כפל<br />
+                    <input type="checkbox" id="devide" value="division" onchange="onChange(this)"/>(:) :חילוק<br />
+                </label>
+                <button id="checkUserAnswer" onclick="checkAnswer()">אני מוכנה!</button>
+                <div id="randomExercise">
+                    <tr>
+                      <td>
+                        <input type="number" id="firstFactor" value="" disabled />
+                      </td>
+                      <td>X</td>
+                      <td>
+                        <input type="number" id="secondFactor" value="" disabled />
+                      </td>
+                      <td>=</td>
+                      <td>
+                        <input type="number" id="resultRandomExercise" placeholder="כמה נראה לך?" required/>
+                      </td>
+                      <td>
+                        <br />
+                        <input type="submit" id="showResultExercise" onclick="done()" value="בדיקה"/>
+                      </td>
+                    </tr>
+                </div>
+                <button id="playagain" onclick="practiceMore()" style="display: none">
+                    לתרגיל הבא!
+                </button>
+            </div>
+            <div id="process">
+                <p id="processInstruction">
+                    לחצו על הסמיילי המתאר איך היה לכם התרגול היום
+                </p>
+                <div id="smiles">
+                    <a data="הצלחתי" href="#process" class="tip">
+                      <img id="successPic" src="assets/icon/success.png" onclick="success()">
+                    </a>
+                    <a data="אהבתי" href="#process" class="tip">
+                      <img id="likePic" src="assets/icon/like.png" onclick="like()">
+                    </a>
+                    <a data="נהניתי" href="#process" class="tip">
+                      <img id="goodPic" src="assets/icon/good.png" onclick="good()">
+                    </a>
+                    <a data="חשבתי הרבה" href="#process" class="tip">
+                      <img id="repeatPic" src="assets/icon/repeat.png" onclick="repeat()">
+                    </a>
+                    <a data="התעצבנתי" href="#process" class="tip">
+                      <img id="frustratedPic" src="assets/icon/frustrated.png" onclick="frustrated()">
+                    </a>
+                    <a data="התבלבלתי" href="#process" class="tip">
+                      <img id="confusedPic" src="assets/icon/confused.png" onclick="confused()">
+                    </a>
+                    <a data="התבאסתי" href="#process" class="tip">
+                      <img id="consentratePic" src="assets/icon/consentrate.png" onclick="consentrate()">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="bottomBanner">
+            <span id="contactShoavl">
+                <h1>שובל יחיא</h1>
+                <h3>Front-End Developer</h3>
+                <h4>shovalichia@gmail.com</h4>
+                <h5>LinkedIn Shoval</h5>
+            </span>
+            <span class="vl"></span>
+            <span id="contactRotem">
+                <h1>רותם ליבוביץ'</h1>
+                <h3>UX/UI Designer</h3>
+                <h4>shovi743@gmail.com</h4>
+                <h5>LinkedIn Rotem</h5>
+            </span>
+        </div>
+    </body>
+</html>

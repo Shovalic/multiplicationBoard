@@ -1,0 +1,154 @@
+#multiplicationBoard{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    /* background-image: url(assets/icon/luahShaam.jpg); */
+    background-color: lightslategrey;
+    width: 90%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+#instrctionMultiplicationBoard{
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#scoreMultiplicationBoard{
+    display: flex;
+    margin-top: 5px;
+    margin-right: -250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: -30px;
+    font-size: 20px;
+}
+
+#scoreMultiplicationBoard p{
+    margin-right: -5x;
+}
+
+#inputScoreMultiplicationBoard{
+    padding-right: 0px;
+    margin-left: 5px;
+    direction: rtl;
+    width: 50px;
+    border-style: hidden;
+    /* background-image: url(assets/icon/luahShaam.jpg); */
+    background-color: lightslategray;
+    font-weight: bolder;
+    color: black;
+    font-size: 25px;
+}
+
+.stopwatch{
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 100%;
+    padding-top: 25px;
+  }
+  
+.rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    border: 2px solid;
+    margin-left: -270px;
+    margin-top: -30px;
+}
+
+.time{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 187px;
+    margin-left: -250px;
+    margin-top: -35px;
+}
+
+#resetButton, #pauseButton, #playButton{
+    width: 40px;
+    height: 40px;
+}
+
+.buttonPlay, .buttonReset{
+    height: 0px;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+}
+
+.buttonPlay{
+    margin-top: 0px;
+    margin-left: -20px;
+}
+
+.buttonReset{
+    margin-top: 0px;
+}
+
+#playButton{
+    display: block;
+}
+
+#pauseButton{
+    display: none;
+}
+
+#multiplicationBoardTable{
+    width: fit-content;
+    font-size: 30px;
+    direction: ltr
+}
+
+#horizontalNumber{
+    font-size: 20px;
+    color: black;
+}
+
+#verticalNumber{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#checkTableResults{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    display: flex;
+    right: 30px;
+    width: 300px;
+    font-size: 20px;
+    margin-left: 170px;
+}
+
+#resetTableInput{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    margin-right: 350px;
+    font-size: 20px;
+}
+ 

@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: lightpink;
+  background-color: lightgray;
   direction: rtl;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
@@ -25,7 +25,7 @@ body {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
-  background-color: lightcoral;
+  background-color: lightslategrey;
 }
 
 #navBar{
@@ -84,6 +84,7 @@ img{
   flex-direction: column;
   border-radius: 20%;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 h1{
@@ -94,6 +95,7 @@ h1{
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 pre {
@@ -179,11 +181,12 @@ pre {
 }
 
 #score p{
-  margin-left: 5px;
+  margin-right: -5x;
 }
 
 #scoreTable{
   padding-right: 0px;
+  margin-left: 5px;
   direction: rtl;
   width: 50px;
   border-style: hidden;
@@ -326,7 +329,7 @@ input[type=checkbox]{
 
 #process {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-image: url(assets/icon/luahShaam.jpg);
   /* background-color: hsl(315, 100%, 70%); */
   width: 90%;
@@ -360,6 +363,10 @@ textarea {
   text-align: right;
   flex-wrap: wrap;
   padding-right: 5px;
+}
+
+::placeholder{
+  color: grey;
 }
 
 button {
@@ -460,26 +467,28 @@ table {
 }
 
 ::-webkit-scrollbar-track{
-  background-color: hsl(315, 60%, 70%); 
+  background-color: lightslategrey;
+  /* background-color: hsl(315, 60%, 70%);  */
   -webkit-box-shadow: inset 0 0 6px rgba(100, 30, 50, 0.3);
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: palevioletred;
+  background-color: grey;
+  /* background-color: palevioletred; */
   border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background: hsl(315, 40%, 70%);
+  background-color: lightsteelblue;
+  /* background: hsl(315, 40%, 70%); */
 }
 
 #smiles{
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 20px;
   width: 500px;
   height: 50px;
-  background-color: pink;
   justify-content: space-around;
   align-items: center;
   margin-left: 10px;
@@ -512,49 +521,61 @@ table {
   margin-right: 10px;
 }
 
-.tooltip {
+a {
+  text-decoration: none;
+}
+
+a:hover {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+a[data]:hover:after {
+  content: attr(data);
+  padding: 4px 8px;
+  color: black;
   position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
+  right: 0;
   top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
+  white-space: nowrap;
+  z-index: 2;
+  border-radius: 5px ;
+  background: pink;
 }
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-
 
 #bottomBanner{
   width: 100%;
-  height: 150px;
+  height: max-content;
   margin-top: 20px;
-  background-color: lightcoral;
+  background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contactShoavl{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  line-height: 40px;
+}
+
+#contactRotem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 90px;
+  line-height: 40px;
+}
+
+.vl {
+  position: absolute;
+  border-left: 6px dashed black;
+  margin-left: 0px;
+  height: 150px;
 }
 
 @media (min-width: 375px) and (max-width: 828px){
@@ -609,7 +630,8 @@ table {
 
   #score{
     font-size: 20px;
-    padding-right: 20px;
+    padding-right: 15px;
+
   }
   #scoreTable{
     direction: rtl;
@@ -618,6 +640,7 @@ table {
     font-weight: bolder;
     color: black;
     font-size: 20px;
+
   }
 
   :disabled{

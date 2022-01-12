@@ -1,0 +1,84 @@
+#process {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-image: url(assets/icon/luahShaam.jpg);
+    background-color: lightslategray;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 25px;
+    margin-right: 5%;
+}
+
+#processInstruction{
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#smiles{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+} 
+  
+#confusedPic, #repeatPic, #goodPic, #likePic{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin-left: 0px;
+    cursor: pointer;
+}
+  
+#consentratePic, #frustratedPic, #successPic{
+    width: 110px;
+    height: 85px;
+    display: block;
+    display: flex;
+    margin-left: 0px;
+    cursor: pointer;
+}
+  
+#goodPic{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+#successPic{
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+  
+a:hover {
+    position: relative;
+}
+  
+a[data]:hover:after {
+    content: attr(data);
+    padding: 4px 8px;
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    border-radius: 5px ;
+    background: pink;
+}

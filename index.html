@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiplay Game</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap"
+      rel="stylesheet"/>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script async src="script.js"></script>
   </head>
   <body>
     <div id="topBanner"></div>
     <div id="container">
-      <!--First section: title, name input, an opening paragraph-->
       <div id="personalNote">
         <h1>בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
         <div>
@@ -27,11 +25,10 @@
         </div>
         <div class="typewrite">
           <pre>
-            טליה החכמה חשבון אוהבת,
-            על כל תרגיל יושבת וחושבת.
-            משקיעה מאמצים על מנת להצליח,
-            לאט לאט את כולם תבריח!
-            מאמינה בך מאוד, שובל
+            לָמַדְתָּ, הַשְׁקָעַת וַאֲפִלּוּ גַּם חָרַשְׁתָּ
+            וְעַכְשָׁו נוּכַל לְהַגִּיד שֶׁהִצְלַחְתָּ!
+            לֹא לְמַהֵר בִּשְׁאֵלוֹת הַקַּלּוּת וְלֹא לְהִבָּהֵל מֵהַשְּׁאֵלוֹת הַקָּשׁוֹת,
+            כָּךְ בְּוַדָּאוּת - נִרְאֶה גַּם תּוֹצָאוֹת!
           </pre>
         </div>
       </div>
@@ -49,12 +46,10 @@
           <a href="#process">איך היה?</a>
         </div>
       </div>
-      <div id="explainTable">
+      <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      
-
-      <!-- Second section: title, score, table, reset button, check button -->
+  
       <div id="tableMultiply">
         <h1>
           <b> לוח הכפל </b>
@@ -63,7 +58,7 @@
          אם תרצו, תוכלו למדוד לכם זמן. מוכנים להגדיר לעצמכם שיא חדש?</b></p>
         <div id="score">
           <p>הניקוד שלך הוא:</p>
-          <input type="number" id="scoreTable" value="0" disabled />
+          <input type="text" id="scoreTable" value="0" disabled />
         </div>
         <div class="stopwatch">
           <div class="circle">
@@ -79,7 +74,7 @@
             </button>
           </div>
         </div>
-        <form action="" name="f1" id="tableShow" onsubmit>
+        <form action="" id="tableShow" onsubmit>
           <table style="direction: ltr">
             <tr id="numberSize">
               <th>X</th>
@@ -233,7 +228,6 @@
         <button id="reset" onclick="resetTable()">איפוס לוח</button>
         <br />
       </div>
-      <!-- Third section: title, checkAnswer button, exercises generator, check button, popUp msg, next exercise -->
       <div id="practice">
         <h1>ועכשיו, בואו נתרגל!</h1>
         <p>סמנו אילו תרגילים תרצו לתרגל</p>
@@ -277,24 +271,37 @@
           לתרגיל הבא!
         </button>
       </div>
-      <!-- Forth section: share process - will change -->
       <div id="process">
         <b><p id="processForm">
-          לחצו על הסמיילי המתאים המתאר איך היה לכם התרגול היום
+          לחצו על הסמיילי המתאר איך היה לכם התרגול היום
           </p></b>
           <div id="smiles">
-            <img class="tooltip" id="successPic" src="assets/icon/success.png" onclick="success()">
-            <span class="tooltiptext">Tooltip text</span>
-            <img id="likePic" src="assets/icon/like.png" onclick="like()">
-            <img id="goodPic" src="assets/icon/good.png" onclick="good()">
-            <img id="repeatPic" src="assets/icon/repeat.png" onclick="repeat()">
-            <img id="frustratedPic" src="assets/icon/frustrated.png" onclick="frustrated()">
-            <img id="confusedPic" src="assets/icon/confused.png" onclick="confused()">
-            <img id="consentratePic" src="assets/icon/consentrate.png" onclick="consentrate()">
+            <a data="הצלחתי" href="#process" class="tip">
+              <img id="successPic" src="assets/icon/success.png" onclick="success()">
+            </a>
+            <a data="אהבתי" href="#process" class="tip">
+              <img id="likePic" src="assets/icon/like.png" onclick="like()">
+            </a>
+            <a data="נהניתי" href="#process" class="tip">
+              <img id="goodPic" src="assets/icon/good.png" onclick="good()">
+            </a>
+            <a data="חשבתי הרבה" href="#process" class="tip">
+              <img id="repeatPic" src="assets/icon/repeat.png" onclick="repeat()">
+            </a>
+            <a data="התעצבנתי" href="#process" class="tip">
+              <img id="frustratedPic" src="assets/icon/frustrated.png" onclick="frustrated()">
+            </a>
+            <a data="התבלבלתי" href="#process" class="tip">
+              <img id="confusedPic" src="assets/icon/confused.png" onclick="confused()">
+            </a>
+            <a data="התבאסתי" href="#process" class="tip">
+              <img id="consentratePic" src="assets/icon/consentrate.png" onclick="consentrate()">
+            </a>
           </div>
+          <!-- <p>תרצו לכתוב משהו נוסף?</p>
         <form method="post" name="send">
-          <textarea id="tellingStroy" required></textarea><br /><br />
-          <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
+          <textarea id="tellingStroy" placeholder="רשמו כאן"></textarea><br /><br /> -->
+          <!-- <b><p id="processFormP">את מי את בוחרת לשתף?</p></b>
           <div id="sendEmails">
             <label>
               <input
@@ -326,11 +333,44 @@
                 required
               /><br />
             </label>
-          </div>
-          <button id="sendMail" onclick="turn()">מאשרת לשלוח</button>
+          </div> -->
+          <!-- <button id="sendMail" onclick="turn()">מאשרת לשלוח</button> -->
         </form>
       </div>
     </div>
-    <div id="bottomBanner"></div>
+    <div id="bottomBanner">
+      <span id="contactShoavl">
+        <h1>שובל יחיא</h1>
+        <h3>Front-End Developer</h3>
+        <h4>shovalichia@gmail.com</h4>
+        <h5>LinkedIn Shoval</h5>
+      </span>
+      <span class="vl"></span>
+      <span id="contactRotem">
+        <h1>רותם ליבוביץ'</h1>
+        <h3>UX/UI Designer</h3>
+        <h4>shovi743@gmail.com</h4>
+        <h5>LinkedIn Rotem</h5>
+      </span>
+    
+      <!-- <table id="contact">
+        <tr>
+          <th id="name">שובל יחיא</th>
+          <th id="name"></th>
+        </tr>
+        <tr>
+          <td id="contentContact">shovalichia@gmail.com</td>
+          <td id="contentContact">shovi743@gmail.com</td>
+        </tr>
+        <tr>
+          <td id="contentContact">050-7432078</td>
+          <td id="contentContact">054-2164412</td>
+        </tr>
+        <tr>
+          <td id="contentContact">LinkedIn Shoval</td>
+          <td id="contentContact">LinkedIn Rotem</td>
+        </tr>
+      </table> -->
+    </div>
   </body>
 </html>
