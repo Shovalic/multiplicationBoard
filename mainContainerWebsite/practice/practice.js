@@ -24,7 +24,7 @@ function done() {
     e.style.marginTop = "10px";
     e.style.textAlign = "center";
     e.style.direction = "rtl";
-    e.style.fontSize = "30px";
+    e.style.fontSize = "25px";
     e.style.fontWeight = "bold";
     var div = document.getElementById("randomExercise");
     div.appendChild(e);

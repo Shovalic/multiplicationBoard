@@ -33,3 +33,56 @@
     margin-left: 0px;
     height: 150px;
 }
+
+@media (min-width: 375px) and (max-width: 828px){
+    @font-face {
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
+      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+    }
+
+    #bottomBanner{
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        background-color: lightslategrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+      
+    #contactShoavl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+      
+    #contactRotem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 10px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+      
+    .vl {
+        position: absolute;
+        border-left: 6px dashed black;
+        margin-left: 0px;
+        height: 100px;
+    }
+}
