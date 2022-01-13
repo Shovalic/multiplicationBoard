@@ -1,4 +1,4 @@
-function checkAnswer(){
+function multiplicationChoice(){
   let div = document.getElementById("randomExercise");
   div.style.display = "block";
   let res = "";
@@ -11,7 +11,6 @@ function checkAnswer(){
   const practice = practiceMore();
   document.getElementById("playagain").style.display = "none";
 }
-
 
 function done() {
     let userAnswer = document.getElementById("resultRandomExercise").value;
