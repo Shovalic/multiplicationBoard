@@ -1,5 +1,5 @@
 function checkNow() {
-  let count = 0; 
+  let count = 0;
   for (i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
       const res = i * j;
@@ -9,48 +9,47 @@ function checkNow() {
       }
     }
   }
-  while (count>=0){
-    var m = document.createElement("p");
-    var divMessage = document.getElementById("tableMultiply");
-    var scorePara = document.createElement("p");
-    var divScore = document.getElementById("score");
-    if (count >= 3){
-      m.innerHTML = "יש כמה שגיאות, חזרי על החומר!";
-      divMessage.appendChild(m);
-      let scoreStudent = document.getElementById("scoreTable").value; 
-      scoreStudent = 100 - count;
-      document.getElementById("scoreTable").value = scoreStudent;
+  while (count >= 0) {
+    debugger;
+    let msg = document.getElementById("msg-result");
+    if (!msg) {
+      let msg = document.createElement("p");
+      msg.id = "msg-result";
+    }
+    document.createElement("p");
+    const divMessage = document.getElementById("tableMultiply");
+    // var scorePara = document.createElement("p");
+    // var divScore = document.getElementById("score");
+
+    const msgText = "";
+    let scoreStudent = document.getElementById("scoreTable").value;
+    let scoreStudent = 100 - count;
+
+    if (count >= 3) {
+      msgText = "יש כמה שגיאות, חזרי על החומר!";
       break;
-    }else if (count == 2){
-      m.innerHTML = "יש שתי טעויות, חזרי על החומר!";
-      divMessage.appendChild(m);
-      let scoreStudent = document.getElementById("scoreTable").value; 
-      scoreStudent = 100 - count;
-      document.getElementById("scoreTable").value = scoreStudent;
+    } else if (count == 2) {
+      msgText = "יש שתי טעויות, חזרי על החומר!";
       break;
-    }else if (count == 1){
-      m.innerHTML = "יש טעות אחת, חזרי על החומר!";
-      divMessage.appendChild(m);
-      let scoreStudent = document.getElementById("scoreTable").value;
-      scoreStudent = 100 - count;
-      document.getElementById("scoreTable").value = scoreStudent;
+    } else if (count == 1) {
+      msgText = "יש טעות אחת, חזרי על החומר!";
       break;
-    }else{
-      m.innerHTML = "פתרת הכל נכון, כל הכבוד!";
-      divMessage.appendChild(m);
-      document.getElementById("scoreTable").value = 100;
+    } else {
+      msgText = "פתרת הכל נכון, כל הכבוד!";
       break;
     }
+
+    msg.innerHTML = msgText;
+    divMessage.appendChild(msg);
+    document.getElementById("scoreTable").value = scoreStudent;
   }
 }
-
 
 function resetTable() {
   for (i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
       const studentResult = document.getElementById("raw" + i + "-" + j).value;
       document.getElementById("raw" + i + "-" + j).value = "";
-
     }
   }
 }
@@ -166,7 +165,6 @@ playButton.addEventListener("click", start);
 pauseButton.addEventListener("click", pause);
 resetButton.addEventListener("click", reset);
 
-
 function practiceMore() {
   document.getElementById("res").value = "none";
   for (k = 1; k <= 10; k++) {
@@ -209,30 +207,34 @@ function turn() {
   return;
 }
 
-function success(){
-  alert("איזה כיף שהצלחת! אם כך, הגיע הזמן לשיא חדש. בהצלחה!")
+function success() {
+  alert("איזה כיף שהצלחת! אם כך, הגיע הזמן לשיא חדש. בהצלחה!");
 }
 
-function like(){
-  alert("איזה כיף שאהבת! מקוות שתאהב גם בפעם הבאה. בהצלחה!")
+function like() {
+  alert("איזה כיף שאהבת! מקוות שתאהב גם בפעם הבאה. בהצלחה!");
 }
 
-function good(){
-  alert("איזה כיף שנהנית! מוזמן לשתף את ההורים ואת החברים. בהצלחה!")
+function good() {
+  alert("איזה כיף שנהנית! מוזמן לשתף את ההורים ואת החברים. בהצלחה!");
 }
 
-function repeat(){
-  alert("זה בסדר גם לעצור ולחזור על החומר! אם לדעתך זה לא מספיק, תמיד אפשר לחזור למשחק ולשפר. בהצלחה!")
+function repeat() {
+  alert(
+    "זה בסדר גם לעצור ולחזור על החומר! אם לדעתך זה לא מספיק, תמיד אפשר לחזור למשחק ולשפר. בהצלחה!"
+  );
 }
 
-function frustrated(){
-  alert("מותר גם להתבאס! הכל עניין של תרגול. בהצלחה!")
+function frustrated() {
+  alert("מותר גם להתבאס! הכל עניין של תרגול. בהצלחה!");
 }
 
-function confused(){
-  alert("יש המון מספרים ותרגילים שונים ולפעמים.. גם בלבולים. הכל עניין של תרגול. בהצלחה!")
+function confused() {
+  alert(
+    "יש המון מספרים ותרגילים שונים ולפעמים.. גם בלבולים. הכל עניין של תרגול. בהצלחה!"
+  );
 }
 
-function consentrate(){
-  alert("זה בסדר להתבאס! עם תרגול נכון ומתמיד, הכל אפשר לשפר. בהצלחה!")
+function consentrate() {
+  alert("זה בסדר להתבאס! עם תרגול נכון ומתמיד, הכל אפשר לשפר. בהצלחה!");
 }

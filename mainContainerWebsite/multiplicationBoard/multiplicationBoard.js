@@ -1,48 +1,51 @@
-
-function checkTableResultsFunction(){
-  let count = 0; 
-  for (i = 1; i <= 10; i++){
-      for (j = 1; j <= 10; j++){
+function checkTableResultsFunction() {
+  let count = 0;
+  for (let i = 1; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
       const res = i * j;
       const studentResult = document.getElementById("raw" + i + "-" + j).value;
-      if (res != studentResult){
-          count = count + 1;
+      if (res != studentResult) {
+        count = count + 1;
       }
     }
   }
-  while (count>=0){
-    var m = document.createElement("p");
-    var divMessage = document.getElementById("multiplicationBoard");
-    var scorePara = document.createElement("p");
-    var divScore = document.getElementById("scoreMultiplicationBoard");
-    if (count >= 3){
-      m.innerHTML = "יש כמה שגיאות, חזרי על החומר!";
-      divMessage.appendChild(m);
-      let scoreStudent = document.getElementById("inputScoreMultiplicationBoard").value; 
-      scoreStudent = 100 - count;
-      document.getElementById("inputScoreMultiplicationBoard").value = scoreStudent;
+
+  const divMessage = document.getElementById("multiplicationBoard");
+  let msg = document.getElementById("msg-result");
+  let msgText = "";
+  let scoreStudent = document.getElementById("scoreMultiplicationBoard");
+
+  if (!msg) {
+    msg = document.createElement("p");
+    msg.id = "msg-result";
+  }
+
+  while (count >= 0) {
+    // var scorePara = document.createElement("p");
+    // var divScore = document.getElementById("score");
+
+    if (scoreStudent && scoreStudent.value) {
+      scoreStudent.value = 100 - count;
+    }
+
+    if (count >= 3) {
+      msgText = "יש כמה שגיאות, חזרי על החומר!";
       break;
-    }else if (count == 2){
-      m.innerHTML = "יש שתי טעויות, חזרי על החומר!";
-      divMessage.appendChild(m);
-      let scoreStudent = document.getElementById("inputScoreMultiplicationBoard").value; 
-      scoreStudent = 100 - count;
-      document.getElementById("inputScoreMultiplicationBoard").value = scoreStudent;
+    } else if (count == 2) {
+      msgText = "יש שתי טעויות, חזרי על החומר!";
       break;
-    }else if (count == 1){
-      m.innerHTML = "יש טעות אחת, חזרי על החומר!";
-      divMessage.appendChild(m);
-      let scoreStudent = document.getElementById("inputScoreMultiplicationBoard").value;
-      scoreStudent = 100 - count;
-      document.getElementById("inputScoreMultiplicationBoard").value = scoreStudent;
+    } else if (count == 1) {
+      msgText = "יש טעות אחת, חזרי על החומר!";
       break;
-    }else{
-      m.innerHTML = "פתרת הכל נכון, כל הכבוד!";
-      divMessage.appendChild(m);
-      document.getElementById("inputScoreMultiplicationBoard").value = 100;
+    } else {
+      msgText = "פתרת הכל נכון, כל הכבוד!";
       break;
     }
   }
+
+  msg.innerHTML = msgText;
+  divMessage.appendChild(msg);
+  // document.getElementById("scoreMultiplicationBoard").value = scoreStudent;
 }
 
 function resetTableInputFunction() {
