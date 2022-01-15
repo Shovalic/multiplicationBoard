@@ -9,43 +9,34 @@ function checkTableResultsFunction() {
       }
     }
   }
-
   const divMessage = document.getElementById("multiplicationBoard");
   let msg = document.getElementById("msg-result");
   let msgText = "";
-  let scoreStudent = document.getElementById("scoreMultiplicationBoard");
-
+  let scoreStudent = document.getElementById("inputScoreMultiplicationBoard");
   if (!msg) {
     msg = document.createElement("p");
     msg.id = "msg-result";
   }
-
   while (count >= 0) {
-    // var scorePara = document.createElement("p");
-    // var divScore = document.getElementById("score");
-
     if (scoreStudent && scoreStudent.value) {
       scoreStudent.value = 100 - count;
     }
-
     if (count >= 3) {
-      msgText = "יש כמה שגיאות, חזרי על החומר!";
+      msgText = "יש כמה שגיאות, חזרו על החומר!";
       break;
     } else if (count == 2) {
-      msgText = "יש שתי טעויות, חזרי על החומר!";
+      msgText = "יש שתי טעויות, בדקו פעם נוספת!";
       break;
     } else if (count == 1) {
-      msgText = "יש טעות אחת, חזרי על החומר!";
+      msgText = "יש טעות אחת, בדקו פעם נוספת!";
       break;
     } else {
       msgText = "פתרת הכל נכון, כל הכבוד!";
       break;
     }
   }
-
   msg.innerHTML = msgText;
   divMessage.appendChild(msg);
-  // document.getElementById("scoreMultiplicationBoard").value = scoreStudent;
 }
 
 function resetTableInputFunction() {

@@ -1,8 +1,7 @@
 #multiplicationBoard{
     margin-top: 20px;
-    padding-bottom: 20px;
     /* background-image: url(assets/icon/luahShaam.jpg); */
-    background-color: lightslategrey;
+    /* background-color: lightslategrey; */
     width: 90%;
     margin-right: 5%;
     display: flex;
@@ -13,9 +12,20 @@
     margin-bottom: 10px;
 }
 
+#multiplicationBoard h1{
+    color: rgba(255, 153, 0, 1);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
 #instrctionMultiplicationBoard{
-    line-height: 40px;
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#new-record{
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 22px;
 }
 
 #scoreMultiplicationBoard{
@@ -31,6 +41,7 @@
 
 #scoreMultiplicationBoard p{
     margin-right: -5x;
+    font-weight: bolder;
 }
 
 #inputScoreMultiplicationBoard{
@@ -39,8 +50,6 @@
     direction: rtl;
     width: 50px;
     border-style: hidden;
-    /* background-image: url(assets/icon/luahShaam.jpg); */
-    background-color: lightslategray;
     font-weight: bolder;
     color: black;
     font-size: 25px;
@@ -76,7 +85,7 @@
     justify-content: space-between;
     width: 187px;
     margin-left: -250px;
-    margin-top: -35px;
+    margin-top: -40px;
 }
 
 #resetButton, #pauseButton, #playButton{
@@ -114,8 +123,16 @@
 #multiplicationBoardTable{
     width: fit-content;
     font-size: 30px;
-    direction: ltr
+    direction: ltr;
 }
+
+#multiplicationBoardTable input{
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    background-color: blanchedalmond;
+}
+
+
 
 #horizontalNumber{
     font-size: 20px;
@@ -129,27 +146,30 @@
 }
 
 #checkTableResults{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 0px 5px;
     height: 30px;
     display: flex;
     right: 30px;
-    width: 300px;
+    width: max-content;
     font-size: 20px;
-    margin-left: 170px;
+    margin-left: 80px;
+    background-color: rgba(255, 213, 149, 1);
+    border-color: rgba(255, 213, 149, 1);;
 }
 
 #resetTableInput{
-    width: 100px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     direction: rtl;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
-    margin-right: 350px;
+    margin-top: -35px;
+    margin-right: 250px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 @media (min-width: 375px) and (max-width: 828px){

@@ -1,16 +1,21 @@
 #practice {
     width: 90%;
     margin-right: 5%;
-    padding-top: 20px;
+    margin-top: 30px;
     padding-bottom: 20px;
     /* background-image: url(assets/icon/luahShaam.jpg); */
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 20%;
     margin-bottom: 10px;
+}
+
+#practice h1{
+    color: rgba(255, 153, 0, 1);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 #checkboxExercise{
@@ -20,11 +25,13 @@
 }
 
 #checkUserAnswer {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 22px;
     padding-right: 10px;
     padding-left: 10px;
+    background-color: rgba(255, 213, 149, 1);
+    border-color: rgba(255, 213, 149, 1);;
 }
 
 #randomExercise{
@@ -37,7 +44,7 @@
 
 #firstFactor, #secondFactor{
     /* background-image: url(assets/icon/luahShaam.jpg); */
-    background-color: white;
+    background-color: rgba(232, 232, 232, 1);
     border: hidden;
     direction: rtl;
     text-align: justify;
@@ -53,6 +60,8 @@
   
 #playagain {
     margin-top: 20px;
+    background-color: rgba(255, 213, 149, 1);
+    border-color: rgba(255, 213, 149, 1);;
 }
 
 #resultRandomExercise {
@@ -60,14 +69,17 @@
     direction: rtl;
     text-align: center;
     padding-right: 10px;
+    background-color: rgba(232, 232, 232, 1);
+    border-color: rgba(232, 232, 232, 1);
 }
   
 #showResultExercise {
     width: 65px;
     direction: rtl;
     text-align: center;
-    border-color: purple;
-    margin-top: 15px;
+    background-color: rgba(255, 213, 149, 1);
+    border-color: rgba(255, 213, 149, 1);
+    margin-top: 25px;
     margin-left: 70px;
 }
 
