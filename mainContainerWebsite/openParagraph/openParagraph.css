@@ -1,4 +1,4 @@
-.openParagraph{
+.open-paragraph{
     width: 90%;
     margin-bottom: 10px;
     margin-right: 5%;
@@ -10,7 +10,7 @@
     flex-direction: column;
   }
   
-  #userNameInsertion{
+  #user-name-insertion{
     width: max-content;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -25,7 +25,7 @@
     background-color: rgba(232, 232, 232, 1);
   }
   
-  #userNameInsertion:hover{
+  #user-name-insertion:hover{
     background-color: rgba(255, 213, 149, 1);
     transition: 1s;
   }
@@ -60,7 +60,7 @@
           url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
   }
 
-  .openParagraph{
+  .open-paragraph{
     width: 100%;
     margin-right: 0px;
     background-color: lightslategrey;
@@ -77,7 +77,7 @@
     margin-top: 10px;
   }
   
-  #userNameInsertion{
+  #user-name-insertion{
     width: max-content;
     margin-top: 10px;
     font-weight: bold;
@@ -88,7 +88,7 @@
     text-align: center;
   }
   
-  #userNameInsertion:hover{
+  #user-name-insertion:hover{
     background-color: lightsteelblue;
     transition: 1s;
   }

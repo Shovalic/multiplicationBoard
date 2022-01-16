@@ -28,14 +28,14 @@
         <!-- <script async src="script.js"></script> -->
     </head>
     <body>
-        <div id="topBanner">
+        <div id="top-banner">
           <img id="logo" src="/assets/icon/logo.png"/>
         </div>
-        <div class="mainContainer">
-            <div class="openParagraph">
+        <div class="main-container">
+            <div class="open-paragraph">
                 <h1 class="headers">בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
                 <div>
-                  <input type="text" id="userNameInsertion" placeholder="לפני שנתחיל, מה שמך?" value="" required/>
+                  <input type="text" id="user-name-insertion" placeholder="לפני שנתחיל, מה שמך?" value="" required/>
                 </div>
                 <img id="welcome" src="/assets/icon/welcomenow.png"/>
                 <!-- <div class="typeWriteOpenParagraph">
@@ -47,31 +47,31 @@
                     </pre>
                 </div> -->
             </div>
-            <div class="navigationBar">
-                <div id="transitionToMuliplicationBoard">
+            <div class="navigation-bar">
+                <div id="transition-to-muliplication-board">
                   <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
-                  <a id="navigationBarLink" href="#multiplicationBoard">לוח הכפל</a>
+                  <a id="navigation-bar-link" href="#multiplication-board">לוח הכפל</a>
                 </div>
-                <div id="transitionToPracticeExercises">
+                <div id="transition-to-practice-exercises">
                   <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
-                  <a id="navigationBarLink" href="#practice">תרגול עצמי</a>
+                  <a id="navigation-bar-link" href="#practice">תרגול עצמי</a>
                 </div>
-                <div id="transitionToHowWas">
+                <div id="transition-to-how-was">
                     <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
-                    <a id="navigationBarLink" href="#process">איך היה?</a>
+                    <a id="navigation-bar-link" href="#process">איך היה?</a>
                 </div>
             </div>
-            <div class="multiplicationBoardVideo">
+            <div class="multiplication-board-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div id="multiplicationBoard">
+            <div id="multiplication-board">
                 <h1>לוח הכפל</h1>
-                <p id="instrctionMultiplicationBoard">לפניכם לוח הכפל. הכניסו את התוצאה המתאימה ולאחר מכן, בדקו את תשובותכם.</p>
+                <p id="instrction-multiplication-board">לפניכם לוח הכפל. הכניסו את התוצאה המתאימה ולאחר מכן, בדקו את תשובותכם.</p>
                 <p>אם תרצו, תוכלו למדוד לכם זמן. </p><br>
                 <p id="new-record">מוכנים להגדיר לעצמכם שיא חדש?</p>
-                <div id="scoreMultiplicationBoard">
+                <div id="score-multiplication-board">
                     <p>הניקוד שלך הוא:</p>
-                    <input type="text" id="inputScoreMultiplicationBoard" value="0" disabled />
+                    <input type="text" id="input-score-multiplication-board" value="0" disabled />
                 </div>
                 <div class="stopwatch">
                     <div class="rectangle">
@@ -91,8 +91,8 @@
                     </div>
                 </div>
                 <form action="" onsubmit>
-                    <table id="multiplicationBoardTable">
-                        <tr id="horizontalNumber">
+                    <table id="multiplication-board-table">
+                        <tr id="horizontal-number">
                             <th>X</th>
                             <th>1</th>
                             <th>2</th>
@@ -106,7 +106,7 @@
                             <th>10</th>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">1</td>
+                            <td id="vertical-number">1</td>
                             <td><input type="text" id="raw1-1" value="1" /></td>
                             <td><input type="text" id="raw1-2" value="2" /></td>
                             <td><input type="text" id="raw1-3" value="3" /></td>
@@ -119,7 +119,7 @@
                             <td><input type="text" id="raw1-10" value="10" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">2</td>
+                            <td id="vertical-number">2</td>
                             <td><input type="text" id="raw2-1" value="2" /></td>
                             <td><input type="text" id="raw2-2" value="4" /></td>
                             <td><input type="text" id="raw2-3" value="6" /></td>
@@ -132,7 +132,7 @@
                             <td><input type="text" id="raw2-10" value="20" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">3</td>
+                            <td id="vertical-number">3</td>
                             <td><input type="text" id="raw3-1" value="3" /></td>
                             <td><input type="text" id="raw3-2" value="6" /></td>
                             <td><input type="text" id="raw3-3" value="9" /></td>
@@ -145,7 +145,7 @@
                             <td><input type="text" id="raw3-10" value="30" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">4</td>
+                            <td id="vertical-number">4</td>
                             <td><input type="text" id="raw4-1" value="4" /></td>
                             <td><input type="text" id="raw4-2" value="8" /></td>
                             <td><input type="text" id="raw4-3" value="12" /></td>
@@ -158,7 +158,7 @@
                             <td><input type="text" id="raw4-10" value="40" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">5</td>
+                            <td id="vertical-number">5</td>
                             <td><input type="text" id="raw5-1" value="5" /></td>
                             <td><input type="text" id="raw5-2" value="10" /></td>
                             <td><input type="text" id="raw5-3" value="15" /></td>
@@ -171,7 +171,7 @@
                             <td><input type="text" id="raw5-10" value="50" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">6</td>
+                            <td id="vertical-number">6</td>
                             <td><input type="text" id="raw6-1" value="6" /></td>
                             <td><input type="text" id="raw6-2" value="12" /></td>
                             <td><input type="text" id="raw6-3" value="18" /></td>
@@ -184,7 +184,7 @@
                             <td><input type="text" id="raw6-10" value="60" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">7</td>
+                            <td id="vertical-number">7</td>
                             <td><input type="text" id="raw7-1" value="7" /></td>
                             <td><input type="text" id="raw7-2" value="14" /></td>
                             <td><input type="text" id="raw7-3" value="21" /></td>
@@ -197,7 +197,7 @@
                             <td><input type="text" id="raw7-10" value="70" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">8</td>
+                            <td id="vertical-number">8</td>
                             <td><input type="text" id="raw8-1" value="8" /></td>
                             <td><input type="text" id="raw8-2" value="16" /></td>
                             <td><input type="text" id="raw8-3" value="24" /></td>
@@ -210,7 +210,7 @@
                             <td><input type="text" id="raw8-10" value="80" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">9</td>
+                            <td id="vertical-number">9</td>
                             <td><input type="text" id="raw9-1" value="9" /></td>
                             <td><input type="text" id="raw9-2" value="18" /></td>
                             <td><input type="text" id="raw9-3" value="27" /></td>
@@ -223,7 +223,7 @@
                             <td><input type="text" id="raw9-10" value="90" /></td>
                         </tr>
                         <tr>
-                            <td id="verticalNumber">10</td>
+                            <td id="vertical-number">10</td>
                             <td><input type="text" id="raw10-1" value="10" /></td>
                             <td><input type="text" id="raw10-2" value="20" /></td>
                             <td><input type="text" id="raw10-3" value="30" /></td>
@@ -237,10 +237,10 @@
                         </tr>
                     </table>
                 </form>
-                <button id="checkTableResults" onclick="checkTableResultsFunction()">
+                <button id="check-table-results" onclick="checkTableResultsFunction()">
                     בואו נבדוק!
                 </button>
-                <img id="resetTableInput" src="assets/icon/startagain.png" onclick="resetTableInputFunction()">
+                <img id="reset-table-input" src="assets/icon/startagain.png" onclick="resetTableInputFunction()">
             </div>
             <div id="practice">
                 <h1>ועכשיו, בואו נתרגל!</h1>

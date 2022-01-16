@@ -1,10 +1,10 @@
-.navigationBar{
+.navigation-bar{
     display: flex;
     width: max-content;
     margin-right: 25%
 }
 
-#transitionToMuliplicationBoard, #transitionToPracticeExercises, #transitionToHowWas{
+#transition-to-muliplication-board, #transition-to-practice-exercises, #transition-to-how-was{
     width: max-content;
     height: max-content;
     background-color: rgba(255, 213, 149, 1);
@@ -19,16 +19,16 @@
     display: flex;
 }
 
-#navigationBarLink:link{
+#navigation-bar-link:link{
     color: black;
     text-decoration: none;
 }
 
-#navigationBarLink:active{
+#navigation-bar-link:active{
     color: black;
 }
 
-#navigationBarLink:visited{
+#navigation-bar-link:visited{
     color: black;
 }
 
@@ -52,13 +52,13 @@
            url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
     }
 
-    .navigationBar{
+    .navigation-bar{
         display: flex;
         width: max-content;
         margin-right: 15px;
     }
     
-    #transitionToMuliplicationBoard, #transitionToPracticeExercises, #transitionToHowWas{
+    #transition-to-muliplication-board, #transition-to-practice-exercises, #transition-to-how-was{
         width: max-content;
         height: max-content;
         background-color: lightslategray;
@@ -72,16 +72,16 @@
         display: flex;
     }
     
-    #navigationBarLink:link{
+    #navigation-bar-link:link{
         color: black;
         text-decoration: none;
     }
     
-    #navigationBarLink:active{
+    #navigation-bar-link:active{
         color: black;
     }
     
-    #navigationBarLink:visited{
+    #navigation-bar-link:visited{
         color: black;
     }
     

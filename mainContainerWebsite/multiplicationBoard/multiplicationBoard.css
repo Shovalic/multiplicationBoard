@@ -1,4 +1,4 @@
-#multiplicationBoard{
+#multiplication-board{
     margin-top: 20px;
     /* background-image: url(assets/icon/luahShaam.jpg); */
     /* background-color: lightslategrey; */
@@ -12,12 +12,12 @@
     margin-bottom: 10px;
 }
 
-#multiplicationBoard h1{
+#multiplication-board h1{
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
-#instrctionMultiplicationBoard{
+#instrction-multiplication-board{
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -28,7 +28,7 @@
     font-size: 22px;
 }
 
-#scoreMultiplicationBoard{
+#score-multiplication-board{
     display: flex;
     margin-top: 5px;
     margin-right: -250px;
@@ -39,12 +39,12 @@
     font-size: 20px;
 }
 
-#scoreMultiplicationBoard p{
+#score-multiplication-board p{
     margin-right: -5x;
     font-weight: bolder;
 }
 
-#inputScoreMultiplicationBoard{
+#input-score-multiplication-board{
     padding-right: 0px;
     margin-left: 5px;
     direction: rtl;
@@ -120,13 +120,13 @@
     display: none;
 }
 
-#multiplicationBoardTable{
+#multiplication-board-table{
     width: fit-content;
     font-size: 30px;
     direction: ltr;
 }
 
-#multiplicationBoardTable input{
+#multiplication-board-table input{
     border: 1px solid black;
     box-shadow: 1px 1px 1px black;
     background-color: blanchedalmond;
@@ -134,18 +134,18 @@
 
 
 
-#horizontalNumber{
+#horizontal-number{
     font-size: 20px;
     color: black;
 }
 
-#verticalNumber{
+#vertical-number{
     font-size: 20px;
     color: black;
     font-weight: bold;
 }
 
-#checkTableResults{
+#check-table-results{
     margin-top: 20px;
     padding: 0px 5px;
     height: 30px;
@@ -158,7 +158,7 @@
     border-color: rgba(255, 213, 149, 1);;
 }
 
-#resetTableInput{
+#reset-table-input{
     width: 40px;
     height: 40px;
     display: flex;
@@ -184,7 +184,7 @@
            url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
     }
 
-    #multiplicationBoard{
+    #multiplication-board{
         margin-top: 20px;
         padding-bottom: 20px;
         /* background-image: url(assets/icon/luahShaam.jpg); */
@@ -199,7 +199,7 @@
         margin-bottom: 10px;
     }
     
-    #instrctionMultiplicationBoard{
+    #instrction-multiplication-board{
         line-height: 40px;
         margin-bottom: 10px;
         font-size: 13px;
@@ -207,7 +207,7 @@
         text-align: center;
     }
     
-    #scoreMultiplicationBoard{
+    #score-multiplication-board{
         display: flex;
         margin-top: 5px;
         margin-right: -200px;
@@ -218,11 +218,11 @@
         font-size: 16px;
     }
     
-    #scoreMultiplicationBoard p{
+    #score-multiplication-board p{
         margin-right: -5x;
     }
     
-    #inputScoreMultiplicationBoard{
+    #input-score-multiplication-board{
         padding-right: 0px;
         margin-left: 5px;
         direction: rtl;
@@ -300,30 +300,30 @@
         display: none;
     }
     
-    #multiplicationBoardTable{
+    #multiplication-board-table{
         width: 50px;
         font-size: 12px;
         direction: ltr;
     }
 
-    #multiplicationBoardTable input{
+    #multiplication-board-table input{
         width: 30px;
         font-size: 15px;
         direction: ltr;
     }
     
-    #horizontalNumber{
+    #horizontal-number{
         font-size: 16px;
         color: black;
     }
     
-    #verticalNumber{
+    #vertical-number{
         font-size: 16px;
         color: black;
         font-weight: bold;
     }
     
-    #checkTableResults{
+    #check-table-results{
         margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 40px;
@@ -336,7 +336,7 @@
         margin-left: 170px;
     }
     
-    #resetTableInput{
+    #reset-table-input{
         width: max-content;
         padding-right: 3px;
         padding-left: 3px;

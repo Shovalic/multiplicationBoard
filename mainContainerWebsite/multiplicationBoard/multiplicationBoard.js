@@ -9,10 +9,10 @@ function checkTableResultsFunction() {
       }
     }
   }
-  const divMessage = document.getElementById("multiplicationBoard");
+  const divMessage = document.getElementById("multiplication-board");
   let msg = document.getElementById("msg-result");
   let msgText = "";
-  let scoreStudent = document.getElementById("inputScoreMultiplicationBoard");
+  let scoreStudent = document.getElementById("input-score-multiplication-board");
   if (!msg) {
     msg = document.createElement("p");
     msg.id = "msg-result";
