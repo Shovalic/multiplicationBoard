@@ -16,7 +16,7 @@ src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embe
 }
 
 body{
-    background-image: url(assets/icon/background2.jpeg);
+    background-image: url(assets/icon/fixbackground.png);
 /* background-color: lightgray; */
     direction: rtl;
     font-size: 20px;
