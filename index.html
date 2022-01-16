@@ -35,7 +35,7 @@
             <div class="open-paragraph">
                 <h1 class="headers">בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
                 <div>
-                  <input type="text" id="user-name-insertion" placeholder="לפני שנתחיל, מה שמך?" value="" required/>
+                  <input type="text" id="user-name-insertion" placeholder="לִפְנֵי שנַּתְחִיל, מָה שמְךָ?" value="" required/>
                 </div>
                 <img id="welcome" src="/assets/icon/welcomenow.png"/>
                 <!-- <div class="typeWriteOpenParagraph">
@@ -50,27 +50,27 @@
             <div class="navigation-bar">
                 <div id="transition-to-muliplication-board">
                   <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
-                  <a id="navigation-bar-link" href="#multiplication-board">לוח הכפל</a>
+                  <a id="navigation-bar-link" href="#multiplication-board">לוּחַ הַכֶּפֶל</a>
                 </div>
                 <div id="transition-to-practice-exercises">
                   <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
-                  <a id="navigation-bar-link" href="#practice">תרגול עצמי</a>
+                  <a id="navigation-bar-link" href="#practice">תִּרְגּוּל עַצְמִי</a>
                 </div>
                 <div id="transition-to-how-was">
                     <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
-                    <a id="navigation-bar-link" href="#process">איך היה?</a>
+                    <a id="navigation-bar-link" href="#process">אֵיךְ הָיָה?</a>
                 </div>
             </div>
             <div class="multiplication-board-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="multiplication-board">
-                <h1>לוח הכפל</h1>
-                <p id="instrction-multiplication-board">לפניכם לוח הכפל. הכניסו את התוצאה המתאימה ולאחר מכן, בדקו את תשובותכם.</p>
-                <p>אם תרצו, תוכלו למדוד לכם זמן. </p><br>
-                <p id="new-record">מוכנים להגדיר לעצמכם שיא חדש?</p>
+                <h1>לוּחַ הַכֶּפֶל</h1>
+                <p id="instrction-multiplication-board">לִפְנֵיכֶם לוּחַ הַכֶּפֶל. הַכְנִיסוּ אֶת הַתּוֹצָאָה הַמַּתְאִימָה וּלְאַחַר מִכֵּן, בִּדְקוּ אֶת תְּשוּבוֹתכֶם.</p>
+                <p>אִם תִּרְצוּ, תּוּכְלוּ לִמְדֹּד לָכֶם זְמַן.</p><br>
+                <p id="new-record">מוּכָנִים לְהַגְדִּיר לְעַצְמְכֶם שִׂיא חָדָשׁ?</p>
                 <div id="score-multiplication-board">
-                    <p>הניקוד שלך הוא:</p>
+                    <p>הַנִּקּוּד שלְּךָ הוּא:</p>
                     <input type="text" id="input-score-multiplication-board" value="0" disabled />
                 </div>
                 <div class="stopwatch">
@@ -238,12 +238,12 @@
                     </table>
                 </form>
                 <button id="check-table-results" onclick="checkTableResultsFunction()">
-                    בואו נבדוק!
+                  בּוֹאוּ נִבְדֹּק
                 </button>
                 <img id="reset-table-input" src="assets/icon/startagain.png" onclick="resetTableInputFunction()">
             </div>
             <div id="practice">
-                <h1>ועכשיו, בואו נתרגל!</h1>
+                <h1>וְעַכְשיו, בּוֹאוּ נְתַרְגֵּל!</h1>
                 <!-- <p>בחרו איזו קבוצת תרגילים תרצו לתרגל</p> -->
                 <!-- <label id="checkboxExercise">
                     <input type="checkbox" id="plus" value="addition" onchange="onChange(this)"/>(+) :חיבור<br />
@@ -251,7 +251,7 @@
                     <input type="checkbox" id="multiply" value="multiplication" onchange="onChange(this)"/>(X) :כפל<br />
                     <input type="checkbox" id="devide" value="division" onchange="onChange(this)"/>(:) :חילוק<br />
                 </label> -->
-                <button id="checkUserAnswer" onclick="multiplicationChoice()">מוכנים?</button>
+                <button id="checkUserAnswer" onclick="multiplicationChoice()">מוּכָנִים?</button>
                 <div id="randomExercise">
                     <tr>
                       <td>
@@ -263,41 +263,41 @@
                       </td>
                       <td>=</td>
                       <td>
-                        <input type="number" id="resultRandomExercise" placeholder="כמה נראה לך?" required/>
+                        <input type="number" id="resultRandomExercise" placeholder="כַּמָּה נִרְאֶה לך?" required/>
                       </td>
                       <td>
                         <br />
-                        <input type="submit" id="showResultExercise" onclick="done()" value="בדיקה"/>
+                        <input type="submit" id="showResultExercise" onclick="done()" value="בְּדִיקָה"/>
                       </td>
                     </tr>
                 </div>
                 <button id="playagain" onclick="practiceMore()" style="display: none">
-                    לתרגיל הבא!
+                  לְתַרְגִּיל הַבָּא!
                 </button>
             </div>
             <div id="process">
-                <!-- <h1 id="processInstruction"> -->
-                <h1>איך היה לך היום?</h1>
+                <!-- <h1 id="process-instruction"> -->
+                <h1>אֵיךְ הָיָה לְךָ הַיּוֹם?</h1>
                 <div id="smiles">
-                    <a data="הצלחתי" href="#process" class="tip">
+                    <a data="הִצְלַחְתִּי" href="#process" class="tip">
                       <img id="success-pic" src="assets/icon/success.png" onclick="success()">
                     </a>
-                    <a data="אהבתי" href="#process" class="tip">
+                    <a data="אָהַבְתִּי" href="#process" class="tip">
                       <img id="like-pic" src="assets/icon/like.png" onclick="like()">
                     </a>
-                    <a data="נהניתי" href="#process" class="tip">
+                    <a data="אָהַבְתִּי" href="#process" class="tip">
                       <img id="good-pic" src="assets/icon/good.png" onclick="good()">
                     </a>
-                    <a data="חשבתי הרבה" href="#process" class="tip">
+                    <a data="חָשבְתִּי הַרְבֵּה" href="#process" class="tip">
                       <img id="repeat-pic" src="assets/icon/repeat.png" onclick="repeat()">
                     </a>
-                    <a data="התעצבנתי" href="#process" class="tip">
+                    <a data="הִתְעַצְבַּנְתִּי" href="#process" class="tip">
                       <img id="frustrated-pic" src="assets/icon/frustrated.png" onclick="frustrated()">
                     </a>
-                    <a data="התבלבלתי" href="#process" class="tip">
+                    <a data="הִתְבָּאַסְתִּי" href="#process" class="tip">
                       <img id="confused-pic" src="assets/icon/confused.png" onclick="confused()">
                     </a>
-                    <a data="התבאסתי" href="#process" class="tip">
+                    <a data="הִתְבָּאַסְתִּי" href="#process" class="tip">
                       <img id="consentrate-pic" src="assets/icon/consentrate.png" onclick="consentrate()">
                     </a>
                 </div>

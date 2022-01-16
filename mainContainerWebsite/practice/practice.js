@@ -20,7 +20,7 @@ function done() {
     let res = firstNumber * secondNumber;  
     if (res == userAnswer){
     var e = document.createElement("p");
-    e.innerHTML = "נכון מאוד! כל הכבוד :)";
+    e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
     e.style.marginTop = "10px";
     e.style.textAlign = "center";
     e.style.direction = "rtl";
