@@ -47,15 +47,14 @@
     background-color: rgba(232, 232, 232, 1);
     border: hidden;
     direction: rtl;
-    text-align: justify;
-    padding-left: -30px;
+    text-align: center;
+    padding-right: 10px;
     margin: 0px;
-    width: 30px;
+    width: 40px;
 }
   
 #secondFactor{
-    width: 30px;
-    padding-right: 15px;
+    padding-right: 10px;
 }
   
 #playagain {
