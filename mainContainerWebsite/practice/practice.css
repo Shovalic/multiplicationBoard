@@ -3,8 +3,6 @@
     margin-right: 5%;
     margin-top: 30px;
     padding-bottom: 20px;
-    /* background-image: url(assets/icon/luahShaam.jpg); */
-    /* background-color: lightslategray; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +36,8 @@
     display: none;
     direction: ltr;
     width: 300px;
-    margin-top: 5px;
-    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
 #firstFactor, #secondFactor{
@@ -79,7 +77,7 @@
     background-color: rgba(255, 213, 149, 1);
     border-color: rgba(255, 213, 149, 1);
     margin-top: 25px;
-    margin-left: 70px;
+    margin-left: 40px;
 }
 
 @media (min-width: 375px) and (max-width: 828px){

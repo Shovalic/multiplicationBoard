@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        max-height: 50vh;
+
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:hover {
+        color: #bbb;
+      }
+
+      /** LIGHTBOX MARKUP **/
+
+      .lightbox {
+        /* Default to hidden */
+        display: none;
+
+        /* Overlay entire screen */
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        /* A bit of padding around image */
+        padding: 1em;
+
+        /* Translucent background */
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Unhide the lightbox when it's the target */
+      .lightbox:target {
+        display: block;
+      }
+
+      .lightbox span {
+        /* Full width and height */
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        /* Size and position background image */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <!-- thumbnail image wrapped in a link -->
+    <a href="#img1">
+            bk
+    </a>
+
+    <!-- lightbox container hidden with CSS -->
+    <a href="#" class="lightbox" id="img1">
+      <span
+                background-image: url();
+
+      ></span>
+    </a>
+    <script>
+        function done() {
+          let userAnswer = document.getElementById("resultRandomExercise").value;
+          let firstNumber = document.getElementById("firstFactor").value;
+          let secondNumber = document.getElementById("secondFactor").value;
+          userAnswer = parseInt(userAnswer);
+          let res = firstNumber * secondNumber;
+          if (res == userAnswer) {
+            var e = document.createElement("p");
+            e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
+            e.style.marginTop = "10px";
+            e.style.textAlign = "center";
+            e.style.direction = "rtl";
+            e.style.fontSize = "25px";
+            e.style.fontWeight = "bold";
+            var div = document.getElementById("randomExercise");
+            div.appendChild(e);
+            document.getElementById("playagain").style.display = "block";
+            return;
+          }
+        }
+      </script>
+  </body>
+</html>

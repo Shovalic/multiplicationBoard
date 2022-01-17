@@ -31,6 +31,7 @@ function done() {
   document.getElementById("playagain").style.display = "block";
   return;
   }
+ 
 }
 
 function practiceMore() {
