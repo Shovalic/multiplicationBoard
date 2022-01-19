@@ -1,7 +1,7 @@
 .navigation-bar{
     display: flex;
     width: max-content;
-    margin-right: 25%
+    margin-right: 25%;
 }
 
 #transition-to-muliplication-board, #transition-to-practice-exercises, #transition-to-how-was{

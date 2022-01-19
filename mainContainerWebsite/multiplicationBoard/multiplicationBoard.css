@@ -15,6 +15,7 @@
 #multiplication-board h1{
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    margin-bottom: 20px;
 }
 
 #instrction-multiplication-board{
@@ -23,7 +24,7 @@
 }
 
 #new-record{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-weight: bolder;
     font-size: 22px;
 }
@@ -70,7 +71,7 @@
     height: 30px;
     width: 120px;
     border: 2px solid;
-    margin-left: -270px;
+    margin-left: -320px;
     margin-top: -30px;
 }
 
@@ -105,11 +106,12 @@
 
 .buttonPlay{
     margin-top: 0px;
-    margin-left: -20px;
+    margin-left: -50px;
 }
 
 .buttonReset{
     margin-top: 0px;
+    margin-right: 20px;
 }
 
 #playButton{
@@ -130,6 +132,8 @@
     border: 1px solid black;
     box-shadow: 1px 1px 1px black;
     background-color: blanchedalmond;
+    line-height: 30px;
+    margin: 0px 5px
 }
 
 
@@ -146,14 +150,16 @@
 }
 
 #check-table-results{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     padding: 0px 5px;
-    height: 30px;
+    height: 40px;
     display: flex;
     right: 30px;
-    width: max-content;
+    width: 120px;
     font-size: 20px;
-    margin-left: 80px;
+    font-weight: bold;
+    margin-left: 30px;
     background-color: rgba(255, 213, 149, 1);
     border-color: rgba(255, 213, 149, 1);;
 }
@@ -166,8 +172,9 @@
     direction: rtl;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-right: 250px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    margin-right: 180px;
     font-size: 20px;
     cursor: pointer;
 }

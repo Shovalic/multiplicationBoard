@@ -17,25 +17,24 @@ function done() {
   let firstNumber = document.getElementById("firstFactor").value;
   let secondNumber = document.getElementById("secondFactor").value;
   userAnswer = parseInt(userAnswer);
-  let res = firstNumber * secondNumber;  
-  if (res == userAnswer){
-  var e = document.createElement("p");
-  e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
-  e.style.marginTop = "10px";
-  e.style.textAlign = "center";
-  e.style.direction = "rtl";
-  e.style.fontSize = "25px";
-  e.style.fontWeight = "bold";
-  var div = document.getElementById("randomExercise");
-  div.appendChild(e);
-  document.getElementById("playagain").style.display = "block";
-  return;
+  let res = firstNumber * secondNumber;
+  if (res === userAnswer){
+    var e = document.createElement("p");
+    e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
+    e.style.marginTop = "10px";
+    e.style.textAlign = "center";
+    e.style.direction = "rtl";
+    e.style.fontSize = "25px";
+    e.style.fontWeight = "bold";
+    var div = document.getElementById("randomExercise");
+    div.appendChild(e);
+    document.getElementById("playagain").style.display = "block";
+    return;
   }
- 
 }
 
 function practiceMore() {
-    document.getElementById("resultRandomExercise").value = "none";
+    document.getElementById("resultRandomExercise").value = "";
     for (k = 1; k <= 10; k++) {
       const num1 = Math.floor(Math.random() * 11);
       document.getElementById("firstFactor").value = num1;

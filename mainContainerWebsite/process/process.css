@@ -18,7 +18,7 @@
 #process h2{
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 /* #processInstruction{
     font-size: 22px;
@@ -32,7 +32,7 @@
 #smiles{
     display: flex;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 500px;
     height: 50px;
     justify-content: space-around;
@@ -76,6 +76,9 @@ a:hover {
 }
   
 a[data]:hover:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     content: attr(data);
     padding: 4px 8px;
     color: black;
@@ -83,7 +86,7 @@ a[data]:hover:after {
     right: 0;
     top: 100%;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 1;
     border-radius: 5px ;
     background: rgba(255, 213, 149, 1);
 }

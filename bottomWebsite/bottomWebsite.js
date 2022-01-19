@@ -1,8 +1,17 @@
-let name = document.getElementById("userNameInsertion").value;
-console.log(name);
-// const printName = document.createElement("p");
-// const pasteName = document.getElementById("process");
-// // let name = document.getElementById("userNameInsertion").value;
-// printName.innerHTML = name;
-// pasteName.appendChild(printName);
+function mailShoval(){
+    var address = document.createElement("p");
+    address.style.fontSize = "18px";
+    address.innerHTML = "ShovalIchia@gmail.com";
+    address.style.marginBottom = "-35px";
+    var divMsg = document.getElementById("contact-shoavl");
+    divMsg.appendChild(address);
+}
 
+function mailRotem(){
+    var address = document.createElement("p");
+    address.style.fontSize = "18px";
+    address.innerHTML = "rotem2460@gmail.com";
+    address.style.marginBottom = "-35px";
+    var divMsg = document.getElementById("contact-rotem");
+    divMsg.appendChild(address);
+}
