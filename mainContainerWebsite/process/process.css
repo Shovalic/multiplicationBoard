@@ -17,7 +17,7 @@
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     margin-bottom: 30px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 /* #processInstruction{
     font-size: 22px;
@@ -36,7 +36,7 @@
     height: 50px;
     justify-content: space-around;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 100px;
 } 
   
 #confused-pic, #repeat-pic, #good-pic, #like-pic{

@@ -22,16 +22,16 @@ function checkTableResultsFunction() {
       scoreStudent.value = 100 - count;
     }
     if (count >= 3) {
-      msgText = "יש כמה שגיאות, חזרו על החומר!";
+      msgText = "יֵש כַּמָּה שגִיאוֹת, חִזְרוּ עַל הַחֹמֶר!";
       break;
     } else if (count == 2) {
-      msgText = "יש שתי טעויות, בדקו פעם נוספת!";
+      msgText = "יֵש שתֵּי טָעוּיוֹת, בִּדְקוּ פַּעַם נוֹסֶפֶת!";
       break;
     } else if (count == 1) {
-      msgText = "יש טעות אחת, בדקו פעם נוספת!";
+      msgText = "יֵש טָעוּת אַחַת, בִּדְקוּ פַּעַם נוֹסֶפֶת!";
       break;
     } else {
-      msgText = "פתרת הכל נכון, כל הכבוד!";
+      msgText = "פָּתַרְת הַכֹּל נָכוֹן, כָּל הַכָּבוֹד! :)";
       break;
     }
   }

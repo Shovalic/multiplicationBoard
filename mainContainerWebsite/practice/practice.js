@@ -26,9 +26,9 @@ function done() {
     msg.id = "msg-result";
   }
   if (isNaN(userAnswer)){
-    msgText = "יש להזין ערך מתאים :)"
+    msgText = "הָזִינוּ עֵרֶךְ מַתְאִים וּפִתְרוּ :)"
   }else if (res !== userAnswer){
-    msgText = "יש שגיאה, נסו שוב :("
+    msgText = "נִמְצְאָה שגִיאָה, נָסוּ שוּב :("
   }else{
     msgText = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)"
   }
