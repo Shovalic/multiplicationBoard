@@ -44,3 +44,21 @@ function practiceMore() {
       const checkUserAnswer = done();
     }
 }
+
+const myTimeout = setTimeout(putName, 5000);
+
+function putName(){
+  var valueName = document.getElementById("user-name-insertion").value;
+  if (valueName){
+    let userNameInput = document.createElement("h1");
+    let divUserNameInput = document.getElementById("user-name");
+    userNameInput.innerText =   valueName + ",";
+    userNameInput.style.color = "rgba(255, 153, 0, 1)";
+    userNameInput.style.textShadow = "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;"
+    divUserNameInput.appendChild(userNameInput);
+  }
+}
+
+
+
+
