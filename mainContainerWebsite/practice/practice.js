@@ -7,42 +7,75 @@ function multiplicationChoice(){
   const num2 = Math.floor(Math.random() * 11);
   document.getElementById("secondFactor").value = num2;
   res = num1 * num2;
-  const checkUserAnswer = done();
+  // const checkUserAnswer = done();
   const practice = practiceMore();
   document.getElementById("playagain").style.display = "none";
 }
 
 function done() {
   let userAnswer = document.getElementById("resultRandomExercise").value;
+  userAnswer = parseInt(userAnswer);
   let firstNumber = document.getElementById("firstFactor").value;
   let secondNumber = document.getElementById("secondFactor").value;
-  userAnswer = parseInt(userAnswer);
   let res = firstNumber * secondNumber;
-  if (res === userAnswer){
-    var e = document.createElement("p");
-    e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
-    e.style.marginTop = "10px";
-    e.style.textAlign = "center";
-    e.style.direction = "rtl";
-    e.style.fontSize = "25px";
-    e.style.fontWeight = "bold";
-    var div = document.getElementById("randomExercise");
-    div.appendChild(e);
-    document.getElementById("playagain").style.display = "block";
-    return;
+  let divMessage = document.getElementById("randomExercise");
+  let msg = document.getElementById("msg-result");
+  let msgText = "";
+  if (!msg) {
+    msg = document.createElement("p");
+    msg.id = "msg-result";
   }
+  if (isNaN(userAnswer)){
+    msgText = "יש להזין ערך מתאים :)"
+  }else if (res !== userAnswer){
+    msgText = "יש שגיאה, נסו שוב :("
+  }else{
+    msgText = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)"
+  }
+  msg.innerHTML = msgText;
+  msg.style.marginTop = "10px";
+  msg.style.textAlign = "center";
+  msg.style.direction = "rtl";
+  msg.style.fontSize = "25px";
+  msg.style.fontWeight = "bold";
+  divMessage.appendChild(msg);
+  document.getElementById("playagain").style.display = "block";
+  return;
 }
 
+// function done() {
+//   let userAnswer = document.getElementById("resultRandomExercise").value;
+//   userAnswer = parseInt(userAnswer);
+//   let firstNumber = document.getElementById("firstFactor").value;
+//   let secondNumber = document.getElementById("secondFactor").value;
+//   let res = firstNumber * secondNumber;
+//   if (res === userAnswer){
+//     var e = document.createElement("p");
+//     e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
+//     e.style.marginTop = "10px";
+//     e.style.textAlign = "center";
+//     e.style.direction = "rtl";
+//     e.style.fontSize = "25px";
+//     e.style.fontWeight = "bold";
+//     var div = document.getElementById("randomExercise");
+//     div.appendChild(e);
+//     document.getElementById("playagain").style.display = "block";
+//     return;
+//   }
+// }
+
 function practiceMore() {
-    document.getElementById("resultRandomExercise").value = "";
-    for (k = 1; k <= 10; k++) {
-      const num1 = Math.floor(Math.random() * 11);
-      document.getElementById("firstFactor").value = num1;
-      const num2 = Math.floor(Math.random() * 11);
-      document.getElementById("secondFactor").value = num2;
-      res = num1 * num2;
-      const checkUserAnswer = done();
-    }
+  let msg = document.getElementById("msg-result");
+  msg.innerHTML = "";
+  document.getElementById("resultRandomExercise").value = ""
+  for (k = 1; k <= 10; k++) {
+    const num1 = Math.floor(Math.random() * 11);
+    document.getElementById("firstFactor").value = num1;
+    const num2 = Math.floor(Math.random() * 11);
+    document.getElementById("secondFactor").value = num2;
+    res = num1 * num2;
+    // const checkUserAnswer = done();
+  }
 }
 
 const myTimeout = setTimeout(putName, 5000);
