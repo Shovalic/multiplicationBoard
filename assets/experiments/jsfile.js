@@ -35,6 +35,27 @@ btn.addEventListener("click", () => {
   }
 });
 
+// function done() {
+//   let userAnswer = document.getElementById("resultRandomExercise").value;
+//   userAnswer = parseInt(userAnswer);
+//   let firstNumber = document.getElementById("firstFactor").value;
+//   let secondNumber = document.getElementById("secondFactor").value;
+//   let res = firstNumber * secondNumber;
+//   if (res === userAnswer){
+//     var e = document.createElement("p");
+//     e.innerHTML = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)";
+//     e.style.marginTop = "10px";
+//     e.style.textAlign = "center";
+//     e.style.direction = "rtl";
+//     e.style.fontSize = "25px";
+//     e.style.fontWeight = "bold";
+//     var div = document.getElementById("randomExercise");
+//     div.appendChild(e);
+//     document.getElementById("playagain").style.display = "block";
+//     return;
+//   }
+// }
+
 function done() {
   let userAnswer = document.getElementById("res").value;
   userAnswer = parseInt(userAnswer);
