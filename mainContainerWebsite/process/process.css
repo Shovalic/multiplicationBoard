@@ -90,6 +90,34 @@ a[data]:hover:after {
     background: rgba(255, 213, 149, 1);
 }
 
+#close{
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    width: 800px;
+    height: 80px;
+    display: none;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+#close p{
+    text-align: center;
+}
+
+#close a{
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#close a:active{
+    color: black;
+}
+
+#close a:visited{
+    color: black;
+}
+
 @media (min-width: 375px) and (max-width: 828px){
     @font-face {
       font-family: 'Rubik', sans-serif;

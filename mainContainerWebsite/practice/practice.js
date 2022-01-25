@@ -46,7 +46,6 @@ function practiceMore() {
 }
 
 const myTimeout = setTimeout(putName, 5000);
-
 function putName(){
   var valueName = document.getElementById("user-name-insertion").value;
   if (valueName){

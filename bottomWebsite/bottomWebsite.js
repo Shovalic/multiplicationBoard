@@ -15,3 +15,4 @@ function mailRotem(){
     var divMsg = document.getElementById("contact-rotem");
     divMsg.appendChild(address);
 }
+
