@@ -10,7 +10,7 @@
     flex-direction: column;
   }
   
-  #user-name-insertion{
+  #user-name-input{
     width: max-content;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -25,7 +25,7 @@
     background-color: rgba(232, 232, 232, 1);
   }
   
-  #user-name-insertion:hover{
+  #user-name-input:hover{
     background-color: rgba(255, 213, 149, 1);
     transition: 1s;
   }
@@ -77,7 +77,7 @@
     margin-top: 10px;
   }
   
-  #user-name-insertion{
+  #user-name-input{
     width: max-content;
     margin-top: 10px;
     font-weight: bold;
@@ -88,7 +88,7 @@
     text-align: center;
   }
   
-  #user-name-insertion:hover{
+  #user-name-input:hover{
     background-color: lightsteelblue;
     transition: 1s;
   }
