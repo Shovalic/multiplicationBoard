@@ -3,7 +3,7 @@ function checkTableResultsFunction() {
   for (let i = 1; i <= 10; i++) {
     for (let j = 1; j <= 10; j++) {
       const res = i * j;
-      const studentResult = document.getElementById("raw" + i + "-" + j).value;
+      const studentResult = document.getElementById("row" + i + "-" + j).value;
       if (res != studentResult) {
         count = count + 1;
       }
@@ -44,8 +44,8 @@ function checkTableResultsFunction() {
 function resetTableInputFunction() {
   for (i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
-      const studentResult = document.getElementById("raw" + i + "-" + j).value;
-      document.getElementById("raw" + i + "-" + j).value = "";
+      const studentResult = document.getElementById("row" + i + "-" + j).value;
+      document.getElementById("row" + i + "-" + j).value = "";
     }
   }
 }
