@@ -15,10 +15,10 @@
 #multiplication-board h1{
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-#instrction-multiplication-board{
+#instruction-multiplication-board{
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -179,6 +179,14 @@
     cursor: pointer;
 }
 
+#checkUserAnswer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 @media (min-width: 375px) and (max-width: 828px){
     @font-face {
       font-family: 'Rubik', sans-serif;
@@ -206,7 +214,7 @@
         margin-bottom: 10px;
     }
     
-    #instrction-multiplication-board{
+    #instruction-multiplication-board{
         line-height: 40px;
         margin-bottom: 10px;
         font-size: 13px;

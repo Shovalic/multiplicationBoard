@@ -33,7 +33,7 @@ body{
 
 .headers{
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .multiplication-board-video{
@@ -41,6 +41,8 @@ body{
     justify-content: center;
     align-items: center;
     margin-right: -10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 input{
@@ -53,7 +55,7 @@ input{
 }
 
 ::placeholder{
-    color: rgb(70, 70, 70);
+    color: rgb(190, 187, 187);
     opacity: 1; 
 }
   

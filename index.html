@@ -34,8 +34,9 @@
         <div class="main-container">
             <div class="open-paragraph">
                 <h1 class="headers">בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
+                <h4>לִפְנֵי שנַּתְחִיל, מָה שמך?</h4>
                 <div>
-                  <input type="text" id="user-name-insertion" placeholder="לִפְנֵי שנַּתְחִיל, מָה שמך?" value="" required/>
+                  <input type="text" id="user-name-insertion" value="" required/>
                 </div>
                 <img id="welcome" src="assets/icon/personalNote.png"/>
                 <!-- <div class="typeWriteOpenParagraph">
@@ -61,12 +62,14 @@
                     <a id="navigation-bar-link" href="#process">אֵיךְ הָיָה?</a>
                 </div>
             </div>
-            <div class="multiplication-board-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            
             <div id="multiplication-board">
                 <h1>לוּחַ הַכֶּפֶל</h1>
-                <p id="instrction-multiplication-board">לִפְנֵיכֶם לוּחַ הַכֶּפֶל. הַכְנִיסוּ אֶת הַתּוֹצָאָה הַמַּתְאִימָה וּלְאַחַר מִכֵּן, בִּדְקוּ אֶת תְּשוּבוֹתכֶם.</p>
+                <p>צְרִיכִים רִעֲנוּן עַל לוּחַ הַכֶּפֶל? צְפוּ בַּסִּרְטוֹן.</p>
+                <div class="multiplication-board-video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Rl_0aTXr7Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p id="instruction-multiplication-board">לִפְנֵיכֶם לוּחַ הַכֶּפֶל. הַכְנִיסוּ אֶת הַתּוֹצָאָה הַמַּתְאִימָה וּלְאַחַר מִכֵּן, בִּדְקוּ אֶת תְּשוּבוֹתכֶם.</p>
                 <p>אִם תִּרְצוּ, תּוּכְלוּ לִמְדֹּד לָכֶם זְמַן.</p><br>
                 <p id="new-record">מוּכָנִים לְהַגְדִּיר לְעַצְמְכֶם שִׂיא חָדָש?</p>
                 <div id="score-multiplication-board">
@@ -90,7 +93,7 @@
                       </button>
                     </div>
                 </div>
-                <form action="" onsubmit>
+                <form action="">
                     <table id="multiplication-board-table">
                         <tr id="horizontal-number">
                             <th>X</th>
@@ -241,9 +244,9 @@
                   בּוֹאוּ נִבְדֹּק
                 </button>
                 <img id="reset-table-input" src="assets/icon/startagain.png" onclick="resetTableInputFunction()">
-            </div>
+              </div>
             <div id="practice">
-                <h1>וְעַכְשיו, בּוֹאוּ נְתַרְגֵּל!</h1>
+                <h1>תִּרְגּוּל עַצְמִי</h1>
                 <!-- <p>בחרו איזו קבוצת תרגילים תרצו לתרגל</p> -->
                 <!-- <label id="checkboxExercise">
                     <input type="checkbox" id="plus" value="addition" onchange="onChange(this)"/>(+) :חיבור<br />
@@ -263,7 +266,7 @@
                       </td>
                       <td>=</td>
                       <td>
-                        <input type="text" id="resultRandomExercise" placeholder="כַּמָּה נִרְאֶה לך?" value="" required/>
+                        <input type="text" id="resultRandomExercise" placeholder="מָה הַתּוֹצָאָה?" value="" required/>
                       </td>
                       <td>
                         <br />
@@ -280,7 +283,7 @@
             </div>
             <div id="process">
                 <!-- <h1 id="process-instruction"> -->
-                <h2>אֵיךְ הָיָה לך הַיּוֹם?</h2>
+                <h2>אֵיךְ הָיְתָה חֲוָיַת הַלְּמִידָה וְהַתִּרְגּוּל?</h2>
                 <div id="smiles">
                     <a data="הִצְלַחְתִּי" href="#process" class="tip">
                       <img id="success-pic" src="assets/icon/success.png" onclick="success()">

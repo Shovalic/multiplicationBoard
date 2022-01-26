@@ -93,11 +93,11 @@ a[data]:hover:after {
 #close{
     background-color: blanchedalmond;
     border: 3px solid black;
-    width: 800px;
-    height: 80px;
+    width: 700px;
+    height: 100px;
     display: none;
     position: absolute;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 0px;
 }
 
