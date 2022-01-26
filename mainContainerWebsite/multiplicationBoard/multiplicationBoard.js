@@ -32,6 +32,8 @@ function checkTableResultsFunction() {
       break;
     } else {
       msgText = "פָּתַרְת הַכֹּל נָכוֹן, כָּל הַכָּבוֹד! :)";
+      let nextToPractice = document.getElementById("next-level-practice");
+      nextToPractice.style.display = "block";
       break;
     }
   }

@@ -2,10 +2,8 @@
     padding-top: 20px;
     padding-bottom: 40px;
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: none;
+    text-align: center;
     border-radius: 20%;
     margin-bottom: 10px;
     line-height: 30px;
@@ -17,7 +15,7 @@
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     margin-bottom: 30px;
-    margin-left: 80px;
+    margin-left: 30px;
 }
 /* #processInstruction{
     font-size: 22px;
@@ -30,13 +28,13 @@
 
 #smiles{
     display: flex;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 30px;
     width: 500px;
     height: 50px;
     justify-content: space-around;
     align-items: center;
-    margin-left: 100px;
+    margin-right: 250px;
 } 
   
 #confused-pic, #repeat-pic, #good-pic, #like-pic{
@@ -107,7 +105,7 @@ a[data]:hover:after {
 
 #close a{
     cursor: pointer;
-    margin-right: 5px;
+    margin-left: 95%;
 }
 
 #close a:active{

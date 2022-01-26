@@ -3,7 +3,7 @@
     margin-right: 5%;
     margin-top: 30px;
     padding-bottom: 20px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -16,6 +16,7 @@
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #checkboxExercise{
@@ -28,11 +29,11 @@
     margin-top: 30px;
     margin-bottom: 40px;
     font-size: 22px;
-    margin-right: -30px;
+    margin-right: 44%;
     padding-right: 10px;
     padding-left: 10px;
     height: 35px;
-    width: 100px;
+    width: max-content;
     font-weight: bold;
     background-color: rgba(255, 213, 149, 1);
     border-color: rgba(255, 213, 149, 1);;
@@ -43,7 +44,7 @@
     direction: ltr;
     width: 300px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-right: 35%;
 }
 
 #firstFactor, #secondFactor{
@@ -65,7 +66,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 22px;
-    margin-right: -30px;
+    margin-right: 35%;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 2px;
@@ -94,10 +95,26 @@
     border-color: rgba(255, 213, 149, 1);
     margin-top: 35px;
     margin-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     height: 30px;
     font-weight: bold;
+}
 
+#next-level-process {
+    display: none;
+    margin-top: -65px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    margin-right: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    height: 35px;
+    width: max-content;
+    font-weight: bold;
+    background-color: rgba(255, 213, 149, 1);
+    border-color: rgba(255, 213, 149, 1);
+    text-align: center;
 }
 
 @media (min-width: 375px) and (max-width: 828px){
@@ -117,7 +134,6 @@
         margin-right: 0px;
         padding-top: 20px;
         padding-bottom: 20px;
-        /* background-image: url(assets/icon/luahShaam.jpg); */
         background-color: lightslategray;
         display: flex;
         justify-content: center;
@@ -150,7 +166,6 @@
     }
     
     #firstFactor, #secondFactor{
-        /* background-image: url(assets/icon/luahShaam.jpg); */
         background-color: white;
         border: hidden;
         direction: rtl;

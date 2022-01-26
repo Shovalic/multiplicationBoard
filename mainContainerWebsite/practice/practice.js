@@ -29,8 +29,14 @@ function done() {
     msgText = "הָזִינוּ עֵרֶךְ מַתְאִים וּפִתְרוּ :)"
   }else if (res !== userAnswer){
     msgText = "נִמְצְאָה שגִיאָה, נָסוּ שוּב :("
+    let nextExercise = document.getElementById("next-level-process");
+    nextExercise.style.display = "none";
+    document.getElementById("playagain").style.display = "none";
   }else{
     msgText = "נָכוֹן מְאוֹד! כָּל הַכָּבוֹד :)"
+    let nextExercise = document.getElementById("next-level-process");
+    nextExercise.style.display = "block";
+    document.getElementById("playagain").style.display = "block";
   }
   msg.innerHTML = msgText;
   msg.style.marginTop = "10px";
@@ -39,7 +45,6 @@ function done() {
   msg.style.fontSize = "25px";
   msg.style.fontWeight = "bold";
   divMessage.appendChild(msg);
-  document.getElementById("playagain").style.display = "block";
   return;
 }
 

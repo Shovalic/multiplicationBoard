@@ -39,6 +39,18 @@
     display: flex;
 }
 
+#notice{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    width: max-content;
+    height: max-content;
+    display: none;
+    position: absolute;
+    margin-top: 70px;
+    margin-right: 150px;
+    padding: 5px;
+}
+
 @media (min-width: 375px) and (max-width: 828px){
     @font-face {
       font-family: 'Rubik', sans-serif;
