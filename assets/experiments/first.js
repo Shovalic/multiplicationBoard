@@ -151,18 +151,18 @@ function reset() {
 // Create function to display buttons
 
 function showButton(buttonKey) {
-  const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
-  const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
+  const buttonToShow = buttonKey === "PLAY" ? play-button-image : pauseButton;
+  const buttonToHide = buttonKey === "PLAY" ? pauseButton : play-button-image;
   buttonToShow.style.display = "block";
   buttonToHide.style.display = "none";
 }
 // Create event listeners
 
-let playButton = document.getElementById("playButton");
+let play-button-image = document.getElementById("play-button-image");
 let pauseButton = document.getElementById("pauseButton");
 let resetButton = document.getElementById("resetButton");
 
-playButton.addEventListener("click", start);
+play-button-image.addEventListener("click", start);
 pauseButton.addEventListener("click", pause);
 resetButton.addEventListener("click", reset);
 
