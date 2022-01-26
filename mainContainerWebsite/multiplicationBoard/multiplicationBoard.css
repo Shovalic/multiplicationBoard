@@ -90,7 +90,7 @@
     margin-top: -40px;
 }
 
-#resetButton, #pauseButton, #play-button-image{
+#resetButton, #pauseButton, #playButton{
     width: 40px;
     height: 40px;
 }
@@ -115,7 +115,7 @@
     margin-right: 20px;
 }
 
-#play-button-image{
+#playButton{
     display: block;
 }
 
@@ -291,7 +291,7 @@
         margin-top: -35px;
     }
     
-    #resetButton, #pauseButton, #play-button-image{
+    #resetButton, #pauseButton, #playButton{
         width: 40px;
         height: 40px;
     }
@@ -315,7 +315,7 @@
         margin-top: 0px;
     }
     
-    #play-button-image{
+    #playButton{
         display: block;
     }
     
