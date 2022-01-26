@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Multiplication Board Game</title>
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="topWebsite/topWebsite.css"/>
+        <link rel="stylesheet" href="header/header.css"/>
         <link rel="stylesheet" href="mainContainerWebsite/openParagraph/openParagraph.css"/>
         <link rel="stylesheet" href="mainContainerWebsite/navigationBar/navigationBar.css"/>
         <link rel="stylesheet" href="mainContainerWebsite/multiplicationBoard/multiplicationBoard.css"/>
         <link rel="stylesheet" href="mainContainerWebsite/practice/practice.css"/>
         <link rel="stylesheet" href="mainContainerWebsite/process/process.css"/>
-        <link rel="stylesheet" href="bottomWebsite/bottomWebsite.css"/>
+        <link rel="stylesheet" href="footer/footer.css"/>
 
         <link rel="icon" type="image/x-icon" href="assets/icon/orange-fabicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +25,7 @@
         <script async src="mainContainerWebsite/multiplicationBoard/multiplicationBoard.js"></script>
         <script async src="mainContainerWebsite/practice/practice.js"></script>
         <script async src="mainContainerWebsite/process/process.js"></script>
-        <script async src="bottomWebsite/bottomWebsite.js"></script>
+        <script async src="footer/footer.js"></script>
         <!-- <script async src="script.js"></script> -->
     </head>
     <body>
@@ -37,9 +37,9 @@
                 <h1 class="headers">בְּרוּכִים הַבָּאִים לְמִשְׂחַק לוּחַ הַכֶּפֶל</h1>
                 <h4>לִפְנֵי שנַּתְחִיל, מָה שמך?</h4>
                 <div>
-                  <input type="text" id="user-name-insertion" value="" required/>
+                  <input type="text" id="user-name-input" value="" required/>
                 </div>
-                <img id="welcome" src="assets/icon/personalNote.png"/>
+                <img id="welcome" src="assets/icon/horizontalPic.png"/>
                 <!-- <div class="typeWriteOpenParagraph">
                     <pre>
                         לָמַדְתָּ, הַשְׁקָעַת וַאֲפִלּוּ גַּם חָרַשְׁתָּ
@@ -50,15 +50,15 @@
                 </div> -->
             </div>
             <div class="navigation-bar">
-                <div id="transition-to-muliplication-board" onclick="showMultiplicationBoard()">
+                <div id="transition-to-multiplication-board-button" onclick="showMultiplicationBoard()">
                   <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
                   <a id="navigation-bar-link" href="#multiplication-board">לוּחַ הַכֶּפֶל</a>
                 </div>
-                <div id="transition-to-practice-exercises" onclick="showPractice()">
+                <div id="transition-to-practice-exercises-button" onclick="showPractice()">
                   <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
                   <a id="navigation-bar-link" href="#practice">תִּרְגּוּל עַצְמִי</a>
                 </div>
-                <div id="transition-to-how-was" onclick="showProcess()">
+                <div id="transition-to-how-was-button" onclick="showProcess()">
                     <img id="thumbtack" src="assets/icon/thumbtack.png" alt="thumbtack">
                     <a id="navigation-bar-link" href="#process">אֵיךְ הָיָה?</a>
                 </div><br>
@@ -316,7 +316,7 @@
             </div>
         </div>
         <div id="bottom-banner">
-            <span id="contact-shoavl">
+            <span id="contact-shoval">
                 <h2>שובל יחיא</h2>
                 <h4>Front-End Developer</h4>
                 <div class="talk-to-us">
