@@ -2,7 +2,7 @@ function checkNow() {
   for (i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
       const res = i * j;
-      const studentResult = document.getElementById("raw" + i + "-" + j).value;
+      const studentResult = document.getElementById("row" + i + "-" + j).value;
       if (res != studentResult) {
         var w = document.createElement("p");
         w.innerHTML = "יש כמה שגיאות, חזרי על החומר!";

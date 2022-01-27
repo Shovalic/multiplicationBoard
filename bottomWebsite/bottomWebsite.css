@@ -1,0 +1,124 @@
+#bottom-banner{
+    width: 100%;
+    height: 190px;
+    margin-top: 20px;
+    background-color: rgba(255, 213, 149, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+#contact-shoavl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    padding-top: 10px;
+    margin-left: 100px;
+    line-height: 35px;
+    font-size: 15x;
+}
+  
+#contact-rotem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    padding-top: 10px;
+    margin-right: 90px;
+    line-height: 35px;
+    font-size: 15px;
+}
+  
+.vl {
+    position: absolute;
+    border-left: 3px dashed black;
+    margin-left: 0px;
+    height: 100px;
+}
+
+#mail{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+#linkedin{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.talk-to-us{
+    display: flex;
+    justify-content: center;
+}
+
+#illustrations{
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 213, 149, 1);
+    padding-top: 7px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+@media (min-width: 375px) and (max-width: 828px){
+    @font-face {
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Varela Round', sans-serif;
+      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
+      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
+           url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
+    }
+
+    #bottom-banner{
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        background-color: lightslategrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+      
+    #contact-shoavl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+      
+    #contact-rotem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 10px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+      
+    .vl {
+        position: absolute;
+        border-left: 6px dashed black;
+        margin-left: 0px;
+        height: 100px;
+    }
+}
