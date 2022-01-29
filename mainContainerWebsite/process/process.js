@@ -49,3 +49,7 @@ function consentrate(){
     show.appendChild(msg);
 }
  
+function closeDialog(){
+    const close = document.getElementById("close");
+    close.style.display = "none";
+}
