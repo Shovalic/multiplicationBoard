@@ -3,9 +3,15 @@ function checkTableResultsFunction() {
   for (let i = 1; i <= 10; i++) {
     for (let j = 1; j <= 10; j++) {
       const res = i * j;
-      const studentResult = document.getElementById("row" + i + "-" + j).value;
-      if (res != studentResult) {
+      const studentResult = document.getElementById("row" + i + "-" + j);
+      studentResult.style.backgroundColor = "blanchedalmond";
+      studentResult.style.color = "black";
+      if (res != studentResult.value) {
         count = count + 1;
+        studentResult.style.backgroundColor = "tomato";
+        studentResult.style.color = "white";
+      }else{
+        studentResult.style.backgroundColor = "#22b622e1";
       }
     }
   }
