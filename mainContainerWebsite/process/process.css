@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-#consentrate-pic,
+#upset-pic,
 #frustrated-pic,
 #success-pic {
   width: 110px;
@@ -168,7 +168,7 @@ a[data]:hover:after {
     cursor: pointer;
   }
 
-  #consentrate-pic,
+  #upset-pic,
   #frustrated-pic,
   #success-pic {
     width: 90px;

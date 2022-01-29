@@ -43,7 +43,7 @@ function confused(){
     show.appendChild(msg);
 }
 
-function consentrate(){
+function upset(){
     show.style.display = "block";
     msg.innerHTML = "זֶה בְּסֵדֶר לְהִתְבָּאֵס! עִם תִּרְגּוּל נָכוֹן וּמִתָּמִיד, הַכֹּל אֶפְשר לְשפֵּר. בְּהַצְלָחָה!"
     show.appendChild(msg);
