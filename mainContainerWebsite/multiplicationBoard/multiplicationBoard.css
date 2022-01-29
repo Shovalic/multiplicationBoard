@@ -1,7 +1,5 @@
 #multiplication-board{
     margin-top: 30px;
-    /* background-image: url(assets/icon/luahShaam.jpg); */
-    /* background-color: lightslategrey; */
     width: 90%;
     margin-right: 5%;
     display: flex;
@@ -15,7 +13,7 @@
 #multiplication-board h1{
     color: rgba(255, 153, 0, 1);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 
@@ -197,14 +195,7 @@
 
 @media (min-width: 375px) and (max-width: 828px){
     @font-face {
-      font-family: 'Rubik', sans-serif;
       font-family: 'Varela Round', sans-serif;
-      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
-      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
     }
 
     #multiplication-board{

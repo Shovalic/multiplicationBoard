@@ -8,7 +8,7 @@ function checkTableResultsFunction() {
       studentResult.style.color = "black";
       if (res != studentResult.value) {
         count = count + 1;
-        studentResult.style.backgroundColor = "tomato";
+        studentResult.style.backgroundColor = "red";
         studentResult.style.color = "white";
       }else{
         studentResult.style.backgroundColor = "#22b622e1";

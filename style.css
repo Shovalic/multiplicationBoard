@@ -4,23 +4,10 @@
     /* border: border-box;  */
 }
 
-@font-face{
-font-family: 'Rubik', sans-serif;
-font-family: 'Varela Round', sans-serif;
-src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
-src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
-    url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
-    url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
-    url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
-}
-
 body{
     background-image: url(assets/icon/fixbackground.png);
-/* background-color: lightgray; */
     direction: rtl;
     font-size: 20px;
-    font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -49,7 +36,6 @@ input{
     width: 40px;
     font-size: 18px;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
 
 }
@@ -66,7 +52,6 @@ input{
 button{
     width: max-content;
     /* border-color: black; */
-    font-family: 'Rubik', sans-serif;
     font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     display: flex;

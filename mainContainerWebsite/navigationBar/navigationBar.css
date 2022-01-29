@@ -14,7 +14,7 @@
     margin: 5px;
     margin-right: 35px;
     padding: 5px;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
     padding-left: 30px;
     display: flex;
 }
@@ -53,14 +53,7 @@
 
 @media (min-width: 375px) and (max-width: 828px){
     @font-face {
-      font-family: 'Rubik', sans-serif;
       font-family: 'Varela Round', sans-serif;
-      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot');
-      src: url('assets/fonts/rubik-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.woff') format('woff'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.ttf') format('truetype'),
-           url('assets/fonts/rubik-variablefont_wght-webfont.svg#rubiklight') format('svg');
     }
 
     .navigation-bar{
