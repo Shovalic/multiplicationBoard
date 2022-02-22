@@ -115,10 +115,6 @@ a[data]:hover:after {
 }
 
 @media (min-width: 375px) and (max-width: 828px) {
-  @font-face {
-    font-family: "Varela Round", sans-serif;
-  }
-
   #process {
     padding-top: 20px;
     padding-bottom: 70px;

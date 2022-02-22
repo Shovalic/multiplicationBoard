@@ -13,6 +13,7 @@ function checkTableResultsFunction() {
       }else{
         studentResult.style.backgroundColor = "#22b622e1";
       }
+      
     }
   }
   const divMessage = document.getElementById("multiplication-board");
@@ -48,12 +49,17 @@ function checkTableResultsFunction() {
 }
 
 function resetTableInputFunction() {
-  for (i = 1; i <= 10; i++) {
-    for (j = 1; j <= 10; j++) {
+  let scoreStudent = document.getElementById("input-score-multiplication-board");
+  for (let i = 1; i <= 10; i++) {
+    for (let j = 1; j <= 10; j++) {
       const studentResult = document.getElementById("row" + i + "-" + j).value;
       document.getElementById("row" + i + "-" + j).value = "";
+      
     }
   }
+  scoreStudent.value = "0";
+  
+
 }
 
 // stopwatch
